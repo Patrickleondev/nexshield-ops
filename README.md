@@ -20,7 +20,7 @@ le membre de l'équipe qui tient le clavier.
 | Nommer un fichier, une branche, un livrable | [`CONVENTIONS.md`](CONVENTIONS.md) |
 | Retrouver un code, une sévérité, un statut | [`NOMENCLATURE.md`](NOMENCLATURE.md) - aide-mémoire d'une page |
 | Savoir ce qui ne doit **jamais** entrer ici | [`SECURITY.md`](SECURITY.md) |
-| Démarrer une mission client | [`20-missions/README.md`](20-missions/README.md) |
+| Démarrer une mission client | [`PRO-GEN-001`](00-societe/procedures/PRO-GEN-001-procedure-git-de-mission.md) - branche, verrous, livraison, clôture |
 | Exécuter un service (méthodo, checklists, gabarits) | [`10-services/<service>/`](10-services/) |
 | Un modèle de NDA, RoE, autorisation de test | `make juridique` puis `90-templates/build/juridique/` - cadre dans [`00-societe/juridique/`](00-societe/juridique/) |
 | Savoir qui fait quoi, pour quand | [`00-societe/PILOTAGE-PROJET.md`](00-societe/PILOTAGE-PROJET.md) |

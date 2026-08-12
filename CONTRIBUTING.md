@@ -86,6 +86,11 @@ Toute PR doit :
 
 Les étapes 2 et 5 sont **bloquantes**. Aucune commande n'est lancée avant.
 
+Ce cycle donne les étapes. Les **gestes Git**, commande par commande, sont dans
+[`00-societe/procedures/PRO-GEN-001-procedure-git-de-mission.md`](00-societe/procedures/PRO-GEN-001-procedure-git-de-mission.md) :
+nommage de la branche par client **et par service**, ouverture, verrous,
+livraison, tag, clôture et cas particuliers.
+
 ---
 
 ## 5. Versionnage de la doctrine (SemVer)

@@ -103,8 +103,15 @@ ACME-2026-001-01-requete-injection.png
 
 ```
 feat/<sujet>     fix/<sujet>      docs/<sujet>
-legal/<sujet>    mission/<client>-<type>    chore/<sujet>
+legal/<sujet>    mission/<client>-<service>    chore/<sujet>
 ```
+
+Codes de service employés dans une branche de mission, en minuscules :
+`pentest`, `airt`, `app`, `devsecops`, `soc`, `privacy`, `sensib`, `infra`.
+
+Le service figure dans le nom de la branche parce qu'il détermine la procédure
+à appliquer. Procédure complète :
+[`PRO-GEN-001`](00-societe/procedures/PRO-GEN-001-procedure-git-de-mission.md).
 
 ### Commit
 

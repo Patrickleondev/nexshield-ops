@@ -4,6 +4,11 @@ Un dossier par mission : `<annee>/<CLIENT>-<type>-<nn>/`.
 
 Créer une mission : `make mission CLIENT=ACME TYPE=pentest`
 
+**Avant de commencer** : une mission vit sur sa propre branche, nommée
+`mission/<client>-<service>`. La procédure complète, commande par commande, est
+dans [`PRO-GEN-001`](../00-societe/procedures/PRO-GEN-001-procedure-git-de-mission.md).
+On ne travaille jamais une mission client directement sur `main`.
+
 ## Structure imposée
 
 ```

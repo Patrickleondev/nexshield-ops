@@ -35,6 +35,18 @@ puis relu à la main avant chaque tag.
   `PRO-PT-103` (exploitation), `PRO-PT-104` (post-exploitation et nettoyage),
   `PRO-PT-200` (restitution), et son document d'outillage.
 
+- `00-societe/procedures/PRO-GEN-001-procedure-git-de-mission.md` : procédure Git
+  d'une mission, commande par commande. Nommage de la branche par client **et par
+  service**, ouverture, les deux verrous, ce qui se commite et ce qui n'entre
+  jamais dans Git, livraison par demande de fusion et tag, clôture, cas
+  particuliers (contre-vérification, mission arrêtée, correction après livraison).
+- `00-societe/rh/presentation-notes-orateur.md` : notes de l'orateur pour la
+  présentation aux associés, diapositive par diapositive, avec les questions à
+  anticiper et les erreurs à éviter.
+- `00-societe/rh/prompt-presentation-equipe.md` : complément décrivant les cinq
+  diapositives manquantes (services vendus, mission dans Git, nommage et
+  versionnage, pilotage, posture commerciale).
+
 ### Modifié
 
 - La procédure de collecte et de destruction des preuves, commune à tous les
