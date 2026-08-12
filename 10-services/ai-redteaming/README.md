@@ -62,7 +62,20 @@ Aucune action technique ne démarre tant que ces points ne sont pas satisfaits :
 - `SYNTH` orientée risque métier et réglementaire
 - Jeu de cas de test rejouable (`30-outils/`) pour la non-régression
 
-## 6. Contenu de ce dossier
+## 6. Documents disponibles
+
+| Document | Objet |
+|---|---|
+| [`methodologie/README.md`](methodologie/README.md) | Les 6 phases, et ce qui est propre à ce service |
+| [`procedures/PRO-AIRT-001-cadrage.md`](procedures/PRO-AIRT-001-cadrage.md) | Fiche système, conditions du fournisseur, budget de jetons, environnement, marqueur de preuve |
+| [`procedures/PRO-AIRT-100-tests-adverses.md`](procedures/PRO-AIRT-100-tests-adverses.md) | Exécution, catégorie par catégorie OWASP LLM 2025 |
+| [`procedures/PRO-AIRT-200-notation-et-restitution.md`](procedures/PRO-AIRT-200-notation-et-restitution.md) | Notation adaptée au non-déterminisme, hiérarchie des corrections |
+| [`checklists/checklist-couverture-owasp-llm.md`](checklists/checklist-couverture-owasp-llm.md) | Couverture LLM01 à LLM10, à recopier en annexe du rapport |
+
+La collecte et la destruction des preuves suivent la procédure commune
+[`PRO-PT-100`](../pentest-audit/procedures/PRO-PT-100-collecte-de-preuves.md).
+
+## 7. Contenu de ce dossier
 
 | Dossier | Ce qu'on y met | Ce qu'on n'y met pas |
 |---|---|---|
@@ -73,11 +86,11 @@ Aucune action technique ne démarre tant que ces points ne sont pas satisfaits :
 | `juridique/` | Clauses de RoE spécifiques à ce service | Les modèles génériques (→ `00-societe/juridique/`) |
 | `outillage/` | Outils, configurations et scripts propres au service | Des secrets, des licences |
 
-## 7. Reste à faire pour passer en v1.0
+## 8. Reste à faire pour passer en v1.0
 
-- [ ] Rédiger la méthodologie complète
-- [ ] Rédiger les SOP de cadrage, d'exécution, de livraison
-- [ ] Produire les checklists à partir du référentiel
+- [x] Méthodologie (v0.1)
+- [x] SOP de cadrage, d'exécution et de restitution
+- [x] Checklist de couverture OWASP LLM 2025
 - [ ] Valider le gabarit de livrable sur une mission blanche
 - [ ] Faire relire les clauses juridiques spécifiques
 - [ ] Fixer la grille tarifaire (`00-societe/commercial/`)

@@ -31,6 +31,10 @@ puis relu à la main avant chaque tag.
   checklist de relecture avant livraison. Ce service sert de référence aux autres.
 - `10-services/*/methodologie/` : phases propres à chacun des sept autres services,
   avec ce qui leur est spécifique et le socle commun.
+- `10-services/ai-redteaming/` : trois procédures (cadrage, tests adverses,
+  notation et restitution) et la checklist de couverture OWASP Top 10 for LLM
+  Applications 2025, avec référencement MITRE ATLAS. Notation adaptée au
+  caractère non déterministe des modèles.
 - `00-societe/juridique/CADRE-LEGAL.md` : cadre Togo (lois 2018-026 et 2019-014,
   ANCy, IPDCP), Afrique (Convention de Malabo) et Union européenne (RGPD, NIS2,
   AI Act), avec sources primaires.
