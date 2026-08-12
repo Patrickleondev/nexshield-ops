@@ -33,19 +33,14 @@ puis relu à la main avant chaque tag.
 - `pentest-audit` complété : `PRO-PT-100` (renseignement), `PRO-PT-101`
   (modélisation de menaces), `PRO-PT-102` (analyse de vulnérabilités),
   `PRO-PT-103` (exploitation), `PRO-PT-104` (post-exploitation et nettoyage),
-  `PRO-PT-200` (restitution), et son document d'outillage.
+  `PRO-PT-200` (restitution), sa checklist de couverture WSTG et son document
+  d'outillage.
 
 - `00-societe/procedures/PRO-GEN-001-procedure-git-de-mission.md` : procédure Git
   d'une mission, commande par commande. Nommage de la branche par client **et par
   service**, ouverture, les deux verrous, ce qui se commite et ce qui n'entre
   jamais dans Git, livraison par demande de fusion et tag, clôture, cas
   particuliers (contre-vérification, mission arrêtée, correction après livraison).
-- `00-societe/rh/presentation-notes-orateur.md` : notes de l'orateur pour la
-  présentation aux associés, diapositive par diapositive, avec les questions à
-  anticiper et les erreurs à éviter.
-- `00-societe/rh/prompt-presentation-equipe.md` : complément décrivant les cinq
-  diapositives manquantes (services vendus, mission dans Git, nommage et
-  versionnage, pilotage, posture commerciale).
 
 ### Modifié
 
@@ -69,8 +64,6 @@ puis relu à la main avant chaque tag.
 - `40-veille/` : classement de la veille technique par service.
 - `NOMENCLATURE.md` : aide-mémoire d'une page de tous les codes employés.
 - `NOTICE.md` : propriété et confidentialité du dépôt.
-- `00-societe/rh/prompt-presentation-equipe.md` : prompt de génération du support
-  de présentation du dépôt aux associés.
 - `10-services/pentest-audit/` : méthodologie PTES adaptée, procédure de cadrage
   (`PRO-PT-001`), procédure de collecte et destruction des preuves (`PRO-GEN-100`),
   checklist de relecture avant livraison. Ce service sert de référence aux autres.
