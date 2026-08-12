@@ -18,6 +18,7 @@ le membre de l'équipe qui tient le clavier.
 |---|---|
 | Comprendre comment on travaille ensemble | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
 | Nommer un fichier, une branche, un livrable | [`CONVENTIONS.md`](CONVENTIONS.md) |
+| Retrouver un code, une sévérité, un statut | [`NOMENCLATURE.md`](NOMENCLATURE.md) — aide-mémoire d'une page |
 | Savoir ce qui ne doit **jamais** entrer ici | [`SECURITY.md`](SECURITY.md) |
 | Démarrer une mission client | [`20-missions/README.md`](20-missions/README.md) |
 | Exécuter un service (méthodo, checklists, gabarits) | [`10-services/<service>/`](10-services/) |

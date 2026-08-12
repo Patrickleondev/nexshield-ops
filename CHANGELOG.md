@@ -22,6 +22,10 @@ puis relu à la main avant chaque tag.
 - Squelette des huit services dans `10-services/`.
 - `90-templates/` : chaîne de génération Markdown → DOCX/PDF à la charte (pandoc).
 - `40-veille/` : classement de la veille technique par service.
+- `NOMENCLATURE.md` : aide-mémoire d'une page de tous les codes employés.
+- `NOTICE.md` : propriété et confidentialité du dépôt.
+- `00-societe/rh/prompt-presentation-equipe.md` : prompt de génération du support
+  de présentation du dépôt aux associés.
 - `10-services/pentest-audit/` : méthodologie PTES adaptée, procédure de cadrage
   (`PRO-PT-001`), procédure de collecte et destruction des preuves (`PRO-PT-100`),
   checklist de relecture avant livraison. Ce service sert de référence aux autres.
