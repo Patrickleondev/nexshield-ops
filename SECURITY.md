@@ -40,7 +40,7 @@ Les preuves d'une mission vivent dans le **coffre chiffré de mission**, jamais 
 | Empreintes SHA-256 des preuves | `20-missions/.../preuves.sha256` | Idem rapport |
 
 Le dépôt ne garde que le **rapport** et le **manifeste d'empreintes**. Ce manifeste
-prouve, en cas de litige, que le rapport correspond bien aux preuves collectées —
+prouve, en cas de litige, que le rapport correspond bien aux preuves collectées -
 sans que les preuves elles-mêmes ne circulent.
 
 **Destruction** : à J+90, la suppression du coffre est actée par un
@@ -65,7 +65,7 @@ Un garde-fou technique ne remplace pas la relecture. **Vous** êtes le contrôle
 ## 4. Accès
 
 - Dépôt **privé**, branche `main` protégée.
-- **MFA obligatoire** sur le compte GitHub de chaque membre — sans exception.
+- **MFA obligatoire** sur le compte GitHub de chaque membre - sans exception.
 - Principe du moindre privilège : accès en écriture pour les 5 membres, accès
   lecture seule pour tout prestataire ou stagiaire.
 - Revue des accès **trimestrielle**, consignée dans `00-societe/smsi/`.
@@ -76,7 +76,7 @@ Un garde-fou technique ne remplace pas la relecture. **Vous** êtes le contrôle
 
 ## 5. Si un secret a fuité
 
-1. **Le considérer comme compromis.** Le révoquer / le changer immédiatement —
+1. **Le considérer comme compromis.** Le révoquer / le changer immédiatement -
    avant même de nettoyer l'historique.
 2. Purger l'historique (`git filter-repo`), forcer la réécriture, prévenir tous
    les membres de re-cloner.
@@ -88,7 +88,7 @@ Un garde-fou technique ne remplace pas la relecture. **Vous** êtes le contrôle
 
 ## 6. Éthique et cadre légal
 
-Aucun test, aucun scan, aucune reconnaissance — même passive — sans **autorisation
+Aucun test, aucun scan, aucune reconnaissance - même passive - sans **autorisation
 écrite signée**par une personne ayant autorité sur les actifs visés
 (gabarit `Modele-AUTH-autorisation-de-test.docx`, produit par `make juridique`).
 

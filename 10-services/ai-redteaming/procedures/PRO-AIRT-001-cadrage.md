@@ -1,4 +1,4 @@
-# PRO-AIRT-001 — Cadrage d'une mission AI RedTeaming
+# PRO-AIRT-001 - Cadrage d'une mission AI RedTeaming
 
 **Version** : v0.1 · **Service** : `ai-redteaming` · **Phase** : cadrage
 **Responsable** : chef de mission · **Sortant** : RoE signé + fiche système complétée
@@ -11,7 +11,7 @@ Quatre différences, et chacune a déjà fait échouer des missions ailleurs.
 
 | Point | Pourquoi c'est spécifique |
 |---|---|
-| **Coût des tests** | Chaque requête consomme des jetons facturés au client. Un test intensif peut coûter cher — il faut un budget cadré. |
+| **Coût des tests** | Chaque requête consomme des jetons facturés au client. Un test intensif peut coûter cher - il faut un budget cadré. |
 | **Conditions du fournisseur** | Tester une application bâtie sur OpenAI, Anthropic ou Mistral engage le client vis-à-vis des conditions d'utilisation de ce fournisseur. |
 | **Périmètre du modèle** | On teste **l'application du client**, pas le modèle de fondation. À dire explicitement, sinon le client attend l'impossible. |
 | **Non-déterminisme** | Le résultat est un **taux de réussite**, pas un oui/non. À expliquer avant la mission, jamais dans le rapport. |
@@ -47,7 +47,7 @@ Bloquant. La plupart des fournisseurs encadrent les tests adverses.
 
 - [ ] Conditions d'utilisation du fournisseur lues
 - [ ] Test adverse autorisé, ou dérogation obtenue par le client
-- [ ] Le client reste **responsable** de sa relation avec son fournisseur — écrit au RoE
+- [ ] Le client reste **responsable** de sa relation avec son fournisseur - écrit au RoE
 - [ ] Politique du fournisseur sur l'entraînement à partir des entrées : vérifiée
       et désactivée si possible
 
@@ -73,7 +73,7 @@ ne revient pas.
 | Copie isolée | Tests d'empoisonnement, tests destructifs | À provisionner par le client |
 
 **Un test d'empoisonnement de base vectorielle ne se fait jamais en production.**
-Sans environnement isolé, cette catégorie sort du périmètre — et c'est écrit.
+Sans environnement isolé, cette catégorie sort du périmètre - et c'est écrit.
 
 ### 5. Retenir les catégories testées
 

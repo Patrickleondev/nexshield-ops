@@ -18,7 +18,7 @@ Créer une mission : `make mission CLIENT=ACME TYPE=pentest`
 ## Ce qu'on ne met JAMAIS ici
 
 Captures d'écran de vulnérabilités, sorties d'outils, dumps, identifiants client,
-enregistrements de session. **Tout ça vit au coffre chiffré**— voir `SECURITY.md` §2.
+enregistrements de session. **Tout ça vit au coffre chiffré**- voir `SECURITY.md` §2.
 Le dépôt ne garde que le rapport et le manifeste d'empreintes.
 
 La CI bloque toute PR contenant ces motifs. Ce n'est pas contournable.

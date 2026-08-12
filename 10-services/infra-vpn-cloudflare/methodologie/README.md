@@ -1,6 +1,6 @@
-# Méthodologie — Audit de durcissement d'infrastructure
+# Méthodologie - Audit de durcissement d'infrastructure
 
-**Version** : v0.1 — **Statut** : brouillon, à éprouver sur la première mission
+**Version** : v0.1 - **Statut** : brouillon, à éprouver sur la première mission
 **Référentiels** : CIS Benchmarks + guides ANSSI + CIS Controls v8
 
 Sources officielles : `00-societe/smsi/REFERENCES.md`.
@@ -25,7 +25,7 @@ classeur de mission.
 
 ## Ce qui est propre à ce service
 
-- **Sauvegarde vérifiée avant tout durcissement — bloquant.** Une mesure CIS mal appliquée peut couper un service de production.
+- **Sauvegarde vérifiée avant tout durcissement - bloquant.** Une mesure CIS mal appliquée peut couper un service de production.
 - Le scoring est largement automatisable (CIS-CAT, Lynis, OpenSCAP) : l'audit se produit en heures, pas en jours. C'est le service à plus forte marge.
 - Un score avant / après est immédiatement lisible par une direction. Bonne porte d'entrée chez un prospect qui hésite sur un engagement plus lourd.
 

@@ -1,9 +1,9 @@
 # Gestion de l'équipe
 
-**Version** : v0.1 — **Statut** : à valider par les 5 associés
+**Version** : v0.1 - **Statut** : à valider par les 5 associés
 
 À cinq, tout le monde sait ce que tout le monde fait. Ce document existe pour le
-jour où ce ne sera plus vrai — et ce jour arrive plus vite qu'on ne le croit.
+jour où ce ne sera plus vrai - et ce jour arrive plus vite qu'on ne le croit.
 
 ---
 
@@ -42,9 +42,9 @@ en congés sans que son suppléant soit à jour.
 | Sévérité d'une vulnérabilité | Testeur | Chef de mission (arbitre si désaccord) |
 | Publier un rapport | Responsable qualité | Chef de mission |
 | Faire évoluer une doctrine | Référent du service | Toute l'équipe, par PR |
-| Engager une dépense | Direction | — |
+| Engager une dépense | Direction | - |
 | Recruter | Direction | Référent du domaine concerné |
-| Arrêter une mission en urgence | **N'importe qui** | Personne — on arrête d'abord, on discute après |
+| Arrêter une mission en urgence | **N'importe qui** | Personne - on arrête d'abord, on discute après |
 
 La dernière ligne est délibérée. Dans notre métier, l'hésitation à interrompre
 coûte plus cher que l'interruption injustifiée.
@@ -75,21 +75,21 @@ C'est la première question à se poser avant d'ouvrir une nouvelle offre.
 ### Avant le premier jour
 
 - [ ] Contrat et **charte éthique** signés
-- [ ] Compte GitHub créé, **MFA activé et vérifié** — bloquant
+- [ ] Compte GitHub créé, **MFA activé et vérifié** - bloquant
 - [ ] Accès en lecture seule au dépôt (l'écriture vient après la semaine 1)
 - [ ] Poste chiffré, gestionnaire de mots de passe installé
 - [ ] Parrain désigné parmi les associés
 
-### Semaine 1 — comprendre
+### Semaine 1 - comprendre
 
 - [ ] Lire `README.md`, `SECURITY.md`, `CONTRIBUTING.md`, `CONVENTIONS.md`
-- [ ] Lire `00-societe/smsi/REFERENTIELS.md` — c'est le document fondateur
-- [ ] Lire `00-societe/commercial/POSTURE.md` — comment on parle aux clients
+- [ ] Lire `00-societe/smsi/REFERENTIELS.md` - c'est le document fondateur
+- [ ] Lire `00-societe/commercial/POSTURE.md` - comment on parle aux clients
 - [ ] `make setup` et vérifier que gitleaks bloque bien un faux secret
 - [ ] **Première PR** : corriger une coquille dans la doctrine. Objectif : valider
       que le circuit fonctionne, pas produire de la valeur.
 
-### Semaines 2 à 4 — observer
+### Semaines 2 à 4 - observer
 
 - [ ] Lire deux rapports de missions passées, de bout en bout
 - [ ] Assister à une restitution client sans intervenir
@@ -97,7 +97,7 @@ C'est la première question à se poser avant d'ouvrir une nouvelle offre.
       rapport livré. C'est l'exercice le plus formateur qui existe.
 - [ ] Auto-évaluation sur la matrice de compétences, avec le parrain
 
-### Mois 2 et 3 — contribuer
+### Mois 2 et 3 - contribuer
 
 - [ ] Première mission en binôme, sur une phase délimitée
 - [ ] Rédiger un chapitre de rapport, relu ligne à ligne par le parrain
@@ -115,7 +115,7 @@ missions en binôme.** Sans exception, quelle que soit son expérience antérieu
 |---|---|
 | Jour de l'annonce | Retrait des missions en cours d'engagement nouveau |
 | Avant le départ | Passation écrite de chaque rôle porté, au suppléant |
-| **Jour du départ** | Révocation de tous les accès — dépôt, cloud, coffre, messagerie |
+| **Jour du départ** | Révocation de tous les accès - dépôt, cloud, coffre, messagerie |
 | J+2 | Rotation de tous les secrets partagés qu'il connaissait |
 | J+7 | Revue : que savait-il que personne d'autre ne sait ? Combler. |
 
@@ -134,10 +134,10 @@ consomme la trésorerie et le temps d'encadrement.
 
 ### Dans quel ordre
 
-1. **Un rédacteur-testeur confirmé** — le goulot d'étranglement est toujours la
+1. **Un rédacteur-testeur confirmé** - le goulot d'étranglement est toujours la
    rédaction, jamais l'exécution.
-2. **Un second profil défensif** — pour ne pas dépendre d'une personne sur le SOC.
-3. **Un profil avant-vente** — quand la direction passe plus de temps à vendre
+2. **Un second profil défensif** - pour ne pas dépendre d'une personne sur le SOC.
+3. **Un profil avant-vente** - quand la direction passe plus de temps à vendre
    qu'à produire.
 
 ### Ce qu'on regarde en entretien
@@ -147,4 +147,4 @@ consomme la trésorerie et le temps d'encadrement.
 - La **capacité à dire « je ne sais pas »**. Dans ce métier, celui qui bluffe est
   dangereux pour le client et pour la société.
 - Le rapport à l'**autorisation**. « Qu'auriez-vous fait si vous aviez trouvé un
-  serveur vulnérable hors périmètre ? » — une seule bonne réponse.
+  serveur vulnérable hors périmètre ? » - une seule bonne réponse.

@@ -1,6 +1,6 @@
-# Méthodologie — Audit de conformité en protection des données
+# Méthodologie - Audit de conformité en protection des données
 
-**Version** : v0.1 — **Statut** : brouillon, à éprouver sur la première mission
+**Version** : v0.1 - **Statut** : brouillon, à éprouver sur la première mission
 **Référentiels** : RGPD + loi togolaise n° 2019-014 + ISO/IEC 27701
 
 Sources officielles : `00-societe/smsi/REFERENCES.md`.
@@ -26,7 +26,7 @@ classeur de mission.
 ## Ce qui est propre à ce service
 
 - **Nous ne sommes pas avocats.** Nous produisons des constats techniques et organisationnels ; le conseil juridique est renvoyé à un partenaire. Le dire explicitement crédibilise le reste.
-- Le volet local relève de la **loi n° 2019-014** et de l'**IPDCP** — voir `00-societe/juridique/CADRE-LEGAL.md` §1.3.
+- Le volet local relève de la **loi n° 2019-014** et de l'**IPDCP** - voir `00-societe/juridique/CADRE-LEGAL.md` §1.3.
 - ISO 27701 s'emboîte dans ISO 27001 : un client déjà engagé dans un SMSI n'a pas de second système à monter.
 
 ---

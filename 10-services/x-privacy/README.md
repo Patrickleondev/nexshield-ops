@@ -12,9 +12,9 @@
 | Référentiel | Rôle |
 |---|---|
 | **RGPD** | Référence mondiale de fait |
-| **ISO/IEC 27701** | Extension vie privée d'ISO 27001 — s'emboîte dans notre SMSI |
+| **ISO/IEC 27701** | Extension vie privée d'ISO 27001 - s'emboîte dans notre SMSI |
 | **NIST Privacy Framework** | Pour les interlocuteurs non juristes |
-| **Droit local + Convention de Malabo** |  à compléter — voir REFERENTIELS.md §3.6 |
+| **Droit local + Convention de Malabo** |  à compléter - voir REFERENTIELS.md §3.6 |
 
 Justification du choix : [`00-societe/smsi/REFERENTIELS.md`](../../00-societe/smsi/REFERENTIELS.md).
 
@@ -40,18 +40,18 @@ Justification du choix : [`00-societe/smsi/REFERENTIELS.md`](../../00-societe/sm
 
 ### Ce qui n'y est pas
 
-- Conseil juridique au sens strict — nous ne sommes pas avocats. Nous produisons des constats techniques et organisationnels ; le conseil juridique est renvoyé à un partenaire.
+- Conseil juridique au sens strict - nous ne sommes pas avocats. Nous produisons des constats techniques et organisationnels ; le conseil juridique est renvoyé à un partenaire.
 
 > Cette section n'est pas décorative : elle est **reprise mot pour mot** dans la
 > proposition commerciale et dans le RoE. Un désaccord de périmètre se règle ici,
-> avant la mission — jamais pendant.
+> avant la mission - jamais pendant.
 
 ## 4. Préalables bloquants
 
 Aucune action technique ne démarre tant que ces points ne sont pas satisfaits :
 
 - NDA
--  **Pays de constitution arrêté** et volet juridique local complété — ce service ne doit pas être vendu avant
+-  **Pays de constitution arrêté** et volet juridique local complété - ce service ne doit pas être vendu avant
 - Partenariat avec un cabinet juridique local
 
 ## 5. Livrables

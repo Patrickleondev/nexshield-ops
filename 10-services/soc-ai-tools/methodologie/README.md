@@ -1,6 +1,6 @@
-# Méthodologie — Évaluation et ingénierie de détection
+# Méthodologie - Évaluation et ingénierie de détection
 
-**Version** : v0.1 — **Statut** : brouillon, à éprouver sur la première mission
+**Version** : v0.1 - **Statut** : brouillon, à éprouver sur la première mission
 **Référentiels** : MITRE ATT&CK + D3FEND + SIGMA + NIST SP 800-61
 
 Sources officielles : `00-societe/smsi/REFERENCES.md`.

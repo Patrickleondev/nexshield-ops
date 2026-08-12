@@ -7,7 +7,7 @@ mission.
 
 ---
 
-## 1. Règles d'usage — à lire avant de brancher quoi que ce soit
+## 1. Règles d'usage - à lire avant de brancher quoi que ce soit
 
 ### Un MCP ne crée aucun droit
 
@@ -72,7 +72,7 @@ Pour chaque serveur, une fiche `<nom>.md` dans ce dossier :
 - Ce qu'il permet de faire :
 - Ce qu'il ne doit PAS faire en mission :
 - Réseau : local / sortant vers <hôte>
-- Secrets requis : <lesquels, et où ils vivent — jamais leur valeur>
+- Secrets requis : <lesquels, et où ils vivent - jamais leur valeur>
 - Autorisé pour les services : <…>
 - Validation humaine obligatoire pour : <actions>
 ```

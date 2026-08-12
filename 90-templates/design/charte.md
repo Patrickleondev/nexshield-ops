@@ -18,7 +18,7 @@ changent au prochain build. C'est ça, une identité visuelle unique et tenable.
 
 ## Palette
 
-Alignée sur le site (`nexshieldsec.netlify.app`) — l'identité est la même sur le
+Alignée sur le site (`nexshieldsec.netlify.app`) - l'identité est la même sur le
 web et sur les livrables.
 
 | Rôle | Couleur | Hex | Usage |
@@ -30,7 +30,7 @@ web et sur les livrables.
 | Texte secondaire | Gris ardoise | `#475569` | Légendes, notes de bas de page |
 | Fond alterné | Gris très clair | `#F1F5F9` | Lignes paires de tableau |
 
-### Sévérités — couleurs figées
+### Sévérités - couleurs figées
 
 Ces six couleurs ne changent jamais, dans aucun document, dans aucun graphique.
 Un client doit reconnaître « rouge = critique » d'un rapport à l'autre.
@@ -46,7 +46,7 @@ Un client doit reconnaître « rouge = critique » d'un rapport à l'autre.
 
 Tous les ratios dépassent 4.5:1 (WCAG AA). **La couleur n'est jamais le seul
 porteur d'information**: une sévérité s'écrit toujours en toutes lettres à côté
-de sa pastille — un lecteur daltonien, ou un rapport imprimé en noir et blanc,
+de sa pastille - un lecteur daltonien, ou un rapport imprimé en noir et blanc,
 doit rester exploitable.
 
 ---
@@ -60,7 +60,7 @@ doit rester exploitable.
 | Code, identifiants | JetBrains Mono | Consolas | 9.5 pt |
 | Légendes | Inter Regular | Calibri | 9 pt, gris `#475569` |
 
-Ce sont les polices du site — cohérence web / documents. Prévoir les replis :
+Ce sont les polices du site - cohérence web / documents. Prévoir les replis :
 le client n'aura pas Inter installé.
 
 ---
@@ -69,7 +69,7 @@ le client n'aura pas Inter installé.
 
 - **Couverture** : logo, titre, client, version, date, mention de classification,
   filet cyan. Aucune information technique.
-- **Pied de page** : `<CLIENT> — CONFIDENTIEL — page X / Y`. Sur **toutes** les pages.
+- **Pied de page** : `<CLIENT> - CONFIDENTIEL - page X / Y`. Sur **toutes** les pages.
 - **En-tête** : nom du document à droite, à partir de la page 2.
 - **Marges** : 2,5 cm. Les rapports s'impriment et s'annotent encore.
 - **Tableaux** : en-tête sur fond primaire, texte blanc, lignes paires `#F1F5F9`.
@@ -91,9 +91,9 @@ le client n'aura pas Inter installé.
 
 ## À produire
 
-- [ ] `reference.docx` — styles Word (Titre 1-4, Corps, Code, Tableau, Légende)
-- [ ] `couverture.docx` — page de garde
-- [ ] `style.css` — même charte pour la sortie PDF (WeasyPrint)
+- [ ] `reference.docx` - styles Word (Titre 1-4, Corps, Code, Tableau, Légende)
+- [ ] `couverture.docx` - page de garde
+- [ ] `style.css` - même charte pour la sortie PDF (WeasyPrint)
 - [ ] Logo en SVG et PNG, versions claire et sombre
 
 > **Comment produire `reference.docx`** : `pandoc -o reference.docx --print-default-data-file reference.docx`

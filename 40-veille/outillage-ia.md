@@ -74,7 +74,7 @@
 - [Arcanum (formerly Kakavasha)](https://github.com/arcanum-ai)
 - [Arcanum Security](https://www.arcanum-sec.com/)
 - [Arcanum-Sec/ai-sec-resources: AI Security Resources Hub](https://github.com/Arcanum-Sec/ai-sec-resources?tab=readme-ov-file)
-- [ATLAS Matrix \| MITRE ATLAS™](https://atlas.mitre.org/matrices/ATLAS))
+- [ATLAS Matrix \| MITRE ATLAS™](https://atlas.mitre.org/))
 - [avinash201199/free-ai-agents-resources: Free AI Agents Resources – Your All-in-One 2026 Learning Hub](https://github.com/avinash201199/free-ai-agents-resources)
 - [become an AI HACKER (it's easier than you think) - YouTube](https://www.youtube.com/watch?v=_yfiUQSbdPY)
 - [crewAIInc/crewAI-examples: A collection of examples that show how to use CrewAI framework to automate workflows.](https://github.com/crewAIInc/crewAI-examples)

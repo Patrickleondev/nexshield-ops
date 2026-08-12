@@ -3,7 +3,7 @@
 **Code de service** : `APP` · **Version de doctrine** : `v0.1` (brouillon) ·
 **Statut commercial** : non vendable tant que la doctrine n'est pas en `v1.0`
 
-> Revue de sécurité d'applications web, mobiles et API, mesurée sur un niveau d'assurance ASVS — pas sur un avis d'expert.
+> Revue de sécurité d'applications web, mobiles et API, mesurée sur un niveau d'assurance ASVS - pas sur un avis d'expert.
 
 ---
 
@@ -39,11 +39,11 @@ Justification du choix : [`00-societe/smsi/REFERENTIELS.md`](../../00-societe/sm
 ### Ce qui n'y est pas
 
 - Infrastructure sous-jacente (relève de `infra-vpn-cloudflare`)
-- Correction du code — nous recommandons, le client implémente (offre d'accompagnement distincte)
+- Correction du code - nous recommandons, le client implémente (offre d'accompagnement distincte)
 
 > Cette section n'est pas décorative : elle est **reprise mot pour mot** dans la
 > proposition commerciale et dans le RoE. Un désaccord de périmètre se règle ici,
-> avant la mission — jamais pendant.
+> avant la mission - jamais pendant.
 
 ## 4. Préalables bloquants
 

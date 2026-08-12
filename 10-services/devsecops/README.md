@@ -42,7 +42,7 @@ Justification du choix : [`00-societe/smsi/REFERENTIELS.md`](../../00-societe/sm
 
 > Cette section n'est pas décorative : elle est **reprise mot pour mot** dans la
 > proposition commerciale et dans le RoE. Un désaccord de périmètre se règle ici,
-> avant la mission — jamais pendant.
+> avant la mission - jamais pendant.
 
 ## 4. Préalables bloquants
 
@@ -50,7 +50,7 @@ Aucune action technique ne démarre tant que ces points ne sont pas satisfaits :
 
 - NDA
 - Accès en lecture aux dépôts et à la plateforme CI/CD
-- Entretiens avec les équipes de développement — prévoir la disponibilité
+- Entretiens avec les équipes de développement - prévoir la disponibilité
 
 ## 5. Livrables
 

@@ -234,11 +234,11 @@ def modele_rapport(chemin: str) -> None:
     doc.add_heading("Les trois choses à corriger en premier", level=2)
     for i in range(1, 4):
         doc.add_paragraph(
-            f"<Titre {i}> — <impact métier en une phrase> → <action> — "
+            f"<Titre {i}> - <impact métier en une phrase> → <action> - "
             f"<effort estimé>", style="List Number")
 
     doc.add_heading("Appréciation globale", level=2)
-    guide("Posture générale, et les points forts constatés — il y en a "
+    guide("Posture générale, et les points forts constatés - il y en a "
           "toujours, et les citer crédibilise les critiques. Tendance par "
           "rapport à un éventuel audit précédent.")
     champ()
@@ -254,7 +254,7 @@ def modele_rapport(chemin: str) -> None:
               ["2", "", "", "", ""]],
              largeurs=[1.2, 4, 3.5, 4.3, 3])
     guide("Repris du RoE §2. En cas d'écart avec le RoE, le justifier ici "
-          "explicitement — un écart non justifié est une faute contractuelle.")
+          "explicitement - un écart non justifié est une faute contractuelle.")
 
     doc.add_heading("1.2 Périmètre exclu", level=2)
     champ("<Systèmes voisins non testés, et pourquoi.>")
@@ -266,7 +266,7 @@ def modele_rapport(chemin: str) -> None:
               ["Règles d'engagement (RoE)", "<référence, version, date>"],
               ["Autorisation de test signée", "<signataire, fonction, date>"],
               ["Autorisation de l'hébergeur", "<référence ou « non requise »>"],
-              ["Droit applicable", "<Togo — loi n° 2018-026 / autre>"]],
+              ["Droit applicable", "<Togo - loi n° 2018-026 / autre>"]],
              largeurs=[6, 10])
     guide("Cette section n'est pas administrative : elle établit que les tests "
           "étaient licites. Voir 00-societe/juridique/CADRE-LEGAL.md §1.1.")
@@ -277,10 +277,10 @@ def modele_rapport(chemin: str) -> None:
         "Security Testing Guide, sous la version <X.Y> de notre doctrine "
         "« pentest-audit ».")
     _tableau(doc, ["Référentiel", "Version", "Usage dans la mission"],
-             [["PTES", "—", "Structuration des phases"],
+             [["PTES", "-", "Structuration des phases"],
               ["OWASP WSTG", "<v4.2>", "Catalogue de tests, preuve de couverture"],
               ["OWASP ASVS", "<v4.0.3>", "Niveau d'assurance visé : <L1 / L2 / L3>"],
-              ["NIST SP 800-115", "—", "Cadre technique de référence"],
+              ["NIST SP 800-115", "-", "Cadre technique de référence"],
               ["MITRE ATT&CK", "<v15>", "Qualification des techniques"],
               ["CVSS", "v4.0", "Scoring des vulnérabilités"],
               ["CWE", "<v4.14>", "Classification des faiblesses"]],
@@ -302,7 +302,7 @@ def modele_rapport(chemin: str) -> None:
              largeurs=[5, 5, 6])
 
     doc.add_heading("1.7 Limites de l'évaluation", level=2)
-    guide("Section de protection — ne jamais la supprimer, même vide.")
+    guide("Section de protection - ne jamais la supprimer, même vide.")
     champ("<Ce qui n'a pas pu être testé et pourquoi : indisponibilité d'un "
           "environnement, fenêtre trop courte, fonctionnalité non déployée, "
           "compte non fourni, refus d'une technique.>")
@@ -313,13 +313,13 @@ def modele_rapport(chemin: str) -> None:
 
     doc.add_heading("1.8 Échelle de sévérité", level=2)
     _tableau(doc, ["Sévérité", "CVSS v4.0", "Définition"],
-             [["Critique", "9.0 – 10.0", "Compromission immédiate, sans "
+             [["Critique", "9.0 - 10.0", "Compromission immédiate, sans "
                "prérequis, avec impact majeur sur les données ou le service"],
-              ["Élevée", "7.0 – 8.9", "Compromission possible avec un prérequis "
+              ["Élevée", "7.0 - 8.9", "Compromission possible avec un prérequis "
                "réaliste"],
-              ["Moyenne", "4.0 – 6.9", "Impact limité ou exploitation "
+              ["Moyenne", "4.0 - 6.9", "Impact limité ou exploitation "
                "conditionnée"],
-              ["Faible", "0.1 – 3.9", "Impact marginal, à corriger par hygiène"],
+              ["Faible", "0.1 - 3.9", "Impact marginal, à corriger par hygiène"],
               ["Information", "0.0", "Observation sans impact de sécurité direct"]],
              largeurs=[3, 3, 10])
     doc.add_paragraph(
@@ -334,7 +334,7 @@ def modele_rapport(chemin: str) -> None:
     guide("Une sous-section par vulnérabilité, par sévérité décroissante. "
           "Dupliquer le bloc ci-dessous autant que nécessaire.")
 
-    doc.add_heading("2.1 <CLIENT>-2026-001 — <Titre orienté impact, pas outil>", level=2)
+    doc.add_heading("2.1 <CLIENT>-2026-001 - <Titre orienté impact, pas outil>", level=2)
     _tableau(doc, ["Champ", "Valeur"],
              [["Identifiant", "<CLIENT>-2026-001"],
               ["Sévérité", "Critique"],
@@ -342,10 +342,10 @@ def modele_rapport(chemin: str) -> None:
               ["Vecteur CVSS", "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H"],
               ["Criticité métier", "<si différente du CVSS : justifier ici>"],
               ["Actif affecté", "<…>"],
-              ["CWE", "CWE-<000> — <intitulé>"],
+              ["CWE", "CWE-<000> - <intitulé>"],
               ["OWASP WSTG", "WSTG-<CAT>-<NN>"],
               ["OWASP ASVS", "V<x.y.z>"],
-              ["MITRE ATT&CK", "T<NNNN> — <intitulé>"],
+              ["MITRE ATT&CK", "T<NNNN> - <intitulé>"],
               ["Statut", "Ouverte"],
               ["Découverte par", "<nom>"],
               ["Date de découverte", "<AAAA-MM-JJ>"],
@@ -375,13 +375,13 @@ def modele_rapport(chemin: str) -> None:
           "personnelle réelle : anonymiser systématiquement. Les preuves brutes "
           "restent au coffre chiffré, seules leurs empreintes figurent en "
           "annexe C.")
-    doc.add_paragraph("Étape 1 — <action>", style="List Number")
+    doc.add_paragraph("Étape 1 - <action>", style="List Number")
     p = doc.add_paragraph(style="NS Code")
     p.add_run("<requête, commande ou charge utile>")
-    doc.add_paragraph("Étape 2 — <action>", style="List Number")
+    doc.add_paragraph("Étape 2 - <action>", style="List Number")
     p = doc.add_paragraph(style="NS Code")
     p.add_run("<réponse observée, tronquée et anonymisée>")
-    doc.add_paragraph("Capture 1 — <légende décrivant ce que la capture prouve>",
+    doc.add_paragraph("Capture 1 - <légende décrivant ce que la capture prouve>",
                       style="NS Legende")
 
     doc.add_heading("Recommandation", level=3)
@@ -423,7 +423,7 @@ def modele_rapport(chemin: str) -> None:
     p = doc.add_paragraph(style="NS Code")
     p.add_run("Internet → <2.1> → accès applicatif → <2.3> → compte "
               "administrateur → base de données")
-    doc.add_paragraph("Figure 1 — Chemin de compromission", style="NS Legende")
+    doc.add_paragraph("Figure 1 - Chemin de compromission", style="NS Legende")
 
     doc.add_heading("5. Plan de remédiation", level=1)
     _tableau(doc, ["#", "Constatation", "Sévérité", "Action", "Effort",
@@ -439,7 +439,7 @@ def modele_rapport(chemin: str) -> None:
     doc.add_page_break()
 
     # ============================ ANNEXES ===================================
-    doc.add_heading("Annexe A — Couverture des tests", level=1)
+    doc.add_heading("Annexe A - Couverture des tests", level=1)
     guide("La preuve de sérieux. La troisième colonne est la plus importante : "
           "un test non exécuté est déclaré, avec son motif.")
     _tableau(doc, ["Identifiant", "Intitulé", "Statut", "Motif si non exécuté"],
@@ -450,7 +450,7 @@ def modele_rapport(chemin: str) -> None:
     doc.add_paragraph("Bilan : <N> exécutés, <N> non applicables, <N> non "
                       "exécutés, sur <N> tests du référentiel.")
 
-    doc.add_heading("Annexe B — Conformité et rattachement réglementaire", level=1)
+    doc.add_heading("Annexe B - Conformité et rattachement réglementaire", level=1)
     guide("Section à conserver pour les clients soumis à une obligation. "
           "Elle transforme le rapport en pièce d'audit.")
     _tableau(doc, ["Constatation", "ISO 27001 (Annexe A)", "Exigence locale",
@@ -464,12 +464,12 @@ def modele_rapport(chemin: str) -> None:
         "concernées ; il ne constitue ni un audit de conformité, ni un avis "
         "juridique.")
 
-    doc.add_heading("Annexe C — Outillage", level=1)
+    doc.add_heading("Annexe C - Outillage", level=1)
     _tableau(doc, ["Outil", "Version", "Usage", "Phase"],
              [["<…>", "<…>", "<…>", "<…>"]],
              largeurs=[4, 3, 6, 3])
 
-    doc.add_heading("Annexe D — Manifeste des preuves", level=1)
+    doc.add_heading("Annexe D - Manifeste des preuves", level=1)
     doc.add_paragraph(
         "Les preuves sont conservées chiffrées, hors du présent document. "
         "Destruction prévue le <date de livraison + 90 jours>, actée par un "
@@ -478,7 +478,7 @@ def modele_rapport(chemin: str) -> None:
              [["<…>", "<…>", "<…>"]],
              largeurs=[4.5, 5.5, 6])
 
-    doc.add_heading("Annexe E — Journal des opérations", level=1)
+    doc.add_heading("Annexe E - Journal des opérations", level=1)
     guide("Extrait du journal de mission. En cas de litige sur une "
           "indisponibilité, c'est cette annexe qui établit ce que nous avons "
           "fait, et quand.")
@@ -486,7 +486,7 @@ def modele_rapport(chemin: str) -> None:
              [["<…>", "<…>", "<…>", "<…>", "<…>"]],
              largeurs=[3, 2.8, 2.8, 3.4, 4])
 
-    doc.add_heading("Annexe F — Glossaire", level=1)
+    doc.add_heading("Annexe F - Glossaire", level=1)
     _tableau(doc, ["Terme", "Définition"],
              [["CVSS", "Système standardisé de notation de la gravité "
                "technique d'une vulnérabilité, de 0 à 10."],
@@ -496,7 +496,7 @@ def modele_rapport(chemin: str) -> None:
               ["<…>", "<…>"]],
              largeurs=[4, 12])
 
-    doc.add_heading("Annexe G — Diffusion et confidentialité", level=1)
+    doc.add_heading("Annexe G - Diffusion et confidentialité", level=1)
     _tableau(doc, ["Destinataire", "Fonction", "Date de remise", "Format"],
              [["<…>", "<…>", "<…>", "<PDF chiffré>"]],
              largeurs=[4.5, 4.5, 3.5, 3.5])
@@ -505,7 +505,7 @@ def modele_rapport(chemin: str) -> None:
         "de la liste ci-dessus requiert l'accord écrit du client. Il contient "
         "des informations dont la divulgation faciliterait une attaque.")
 
-    _pied(doc.sections[0], f"<CLIENT> — {C.CLASSIFICATION}")
+    _pied(doc.sections[0], f"<CLIENT> - {C.CLASSIFICATION}")
     doc.save(chemin)
     print("écrit", chemin)
 
@@ -569,7 +569,7 @@ def _puces(diapo, x, y, l, items, taille=14, interligne=1.5):
     for i, item in enumerate(items):
         p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
         p.line_spacing = interligne
-        r = p.add_run(); r.text = "—   " + item
+        r = p.add_run(); r.text = "-   " + item
         r.font.size = PPt(taille)
         r.font.name = C.POLICE_CORPS
         r.font.color.rgb = PRGB(*C.rgb(C.TEXTE))
@@ -656,12 +656,12 @@ def modele_restitution(chemin: str) -> None:
     prs.slide_width, prs.slide_height = PCm(33.87), PCm(19.05)   # 16:9
 
     _couverture(prs, "Restitution de mission",
-                "<Client> — <Type de mission> — <Date>",
+                "<Client> - <Type de mission> - <Date>",
                 f"{C.CLASSIFICATION}\nDiffusion limitée aux destinataires désignés")
 
     _notes(prs.slides[0],
            "Ne pas commencer par les failles. Commencer par remercier l'équipe "
-           "technique du client pour sa disponibilité — c'est elle qui vous a "
+           "technique du client pour sa disponibilité - c'est elle qui vous a "
            "ouvert les accès, et c'est elle qui portera les corrections.\n\n"
            "Annoncer la durée (45 min de présentation, 15 min de questions) et "
            "préciser que le rapport détaillé a déjà été transmis.")
@@ -699,7 +699,7 @@ def modele_restitution(chemin: str) -> None:
               "coup qu'une zone n'a pas été testée perd confiance dans tout le "
               "reste. Le dire soi-même, en premier, protège la crédibilité du "
               "rapport.\n\nSi le périmètre a été réduit en cours de mission, "
-              "c'est ici qu'on l'explique — pas dans les questions.")
+              "c'est ici qu'on l'explique - pas dans les questions.")
 
     # 3. Verdict
     d = _diapo_vide(prs)
@@ -742,7 +742,7 @@ def modele_restitution(chemin: str) -> None:
           12, False, C.TEXTE_FAIBLE, C.POLICE_CORPS)
     _notes(d, "La diapo la plus importante de la présentation. Raconter, ne pas "
               "lister. Prendre 3 à 4 minutes.\n\n"
-              "La phrase du bas — « aucune alerte n'a été déclenchée » — est "
+              "La phrase du bas - « aucune alerte n'a été déclenchée » - est "
               "celle qui ouvre la discussion sur la détection, donc sur la "
               "mission suivante. Ne pas la dire de façon accusatrice : c'est un "
               "constat, pas un reproche.")
@@ -750,7 +750,7 @@ def modele_restitution(chemin: str) -> None:
     # 6-7. Constatations
     for n in (1, 2):
         d = _diapo_vide(prs)
-        _titre_diapo(d, prs, f"<CLIENT>-2026-00{n} — <titre>",
+        _titre_diapo(d, prs, f"<CLIENT>-2026-00{n} - <titre>",
                      f"Constatation {n}")
         _carte(d, 1.8, 3.2, 14.6, 4.4, "Impact métier",
                "<Ce que ça permet concrètement, chiffré>",
@@ -818,7 +818,7 @@ def modele_restitution(chemin: str) -> None:
     d = _diapo_vide(prs)
     _titre_diapo(d, prs, "Vos questions", "")
     _zone(d, 1.8, 8.0, 28, 3,
-          "<Contact du chef de mission — téléphone et courriel>",
+          "<Contact du chef de mission - téléphone et courriel>",
           14, False, C.TEXTE_FAIBLE, C.POLICE_CORPS)
     _notes(d, "Questions difficiles à préparer :\n\n"
               "« Est-ce qu'on est en règle ? » → Ce n'est pas un audit de "
@@ -841,7 +841,7 @@ def modele_presentation(chemin: str) -> None:
 
     _couverture(prs, "Présentation de la société",
                 "Sécurité offensive, IA et conformité",
-                "<Date> — <Interlocuteur>")
+                "<Date> - <Interlocuteur>")
 
     plan = [
         ("Qui nous sommes", "Une équipe, pas un intermédiaire",
@@ -852,21 +852,21 @@ def modele_presentation(chemin: str) -> None:
          "Trop d'organisations sont traitées comme des cibles commerciales\n"
          "plutôt que comme des partenaires de sécurité.\n\n"
          "Notre approche : honnête, offensive d'abord, fondée sur les menaces\n"
-         "réelles — pas sur des listes de conformité."),
+         "réelles - pas sur des listes de conformité."),
         ("Nos services", "Huit offres, une seule doctrine",
          "Pentest & audit\nAI RedTeaming\nSécurité applicative\nDevSecOps\n"
          "SOC & outillage IA défensif\nX-Privacy\nSensibilisation\n"
          "Infrastructure, VPN & Cloudflare"),
         ("Notre méthode", "Des référentiels reconnus, appliqués de bout en bout",
-         "ISO/IEC 27001 — notre système de management\n"
-         "MITRE ATT&CK — le langage commun de tous nos livrables\n"
-         "PTES, OWASP WSTG, ASVS — l'exécution\n"
-         "OWASP LLM, MITRE ATLAS — l'IA"),
+         "ISO/IEC 27001 - notre système de management\n"
+         "MITRE ATT&CK - le langage commun de tous nos livrables\n"
+         "PTES, OWASP WSTG, ASVS - l'exécution\n"
+         "OWASP LLM, MITRE ATLAS - l'IA"),
         ("Ce qui nous distingue", "Trois choses",
          "1. Nos rapports sont mappés ATT&CK : votre SOC peut les exploiter\n"
          "   directement, au lieu de recevoir une liste de failles.\n\n"
          "2. Nous mesurons. ASVS, SAMM, CIS : des scores qui se re-mesurent.\n\n"
-         "3. AI RedTeaming — une compétence rare, structurée sur OWASP LLM\n"
+         "3. AI RedTeaming - une compétence rare, structurée sur OWASP LLM\n"
          "   et MITRE ATLAS."),
         ("Notre cadre", "Ce que nous exigeons avant de commencer",
          "NDA signé\nContrat et périmètre écrits\nRègles d'engagement validées\n"

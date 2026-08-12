@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Génère le pack juridique en DOCX — documents destinés à être signés.
+"""Génère le pack juridique en DOCX - documents destinés à être signés.
 
 Usage : python3 30-outils/scripts/generer_juridique.py [--out 90-templates/build/juridique]
 
@@ -26,11 +26,11 @@ AVERTISSEMENT = ("Modèle interne. Toutes les mentions entre chevrons doivent ê
                  "renseignées avant signature. Ce document n'a pas été relu par un "
                  "conseil juridique : le faire valider avant tout usage contractuel.")
 
-CONFIDENTIEL = "CONFIDENTIEL — DIFFUSION RESTREINTE"
+CONFIDENTIEL = "CONFIDENTIEL - DIFFUSION RESTREINTE"
 
 
 def _art(doc, numero: str, titre: str) -> None:
-    doc.add_heading(f"Article {numero} — {titre}", level=2)
+    doc.add_heading(f"Article {numero} - {titre}", level=2)
 
 
 def _p(doc, texte: str) -> None:
@@ -126,7 +126,7 @@ def nda(chemin: str) -> None:
     _p(doc, "Fait à <lieu>, le <date>, en deux exemplaires originaux.")
     bloc_signatures(doc, ["Pour le Client", f"Pour {C.SOCIETE}"])
 
-    pied_de_page(doc.sections[0], f"Accord de confidentialité — {CONFIDENTIEL}")
+    pied_de_page(doc.sections[0], f"Accord de confidentialité - {CONFIDENTIEL}")
     doc.save(chemin); print("écrit", chemin)
 
 
@@ -155,7 +155,7 @@ def roe(chemin: str) -> None:
     tableau(doc, ["", "Client", "Prestataire"],
             [["Raison sociale", "<…>", C.SOCIETE],
              ["Représentant signataire", "<nom, fonction>", "<nom, fonction>"],
-             ["Autorité sur les actifs testés", "<confirmée le …>", "—"]],
+             ["Autorité sur les actifs testés", "<confirmée le …>", "-"]],
             largeurs=[5, 5.5, 5.5])
     tableau(doc, ["Document", "Référence", "Date"],
             [["Accord de confidentialité", "<…>", "<…>"],
@@ -171,9 +171,9 @@ def roe(chemin: str) -> None:
                   "(conformité, responsabilité). Les écrire séparément évite le "
                   "malentendu classique où le client attend une attestation de "
                   "conformité et reçoit un rapport technique.")
-    doc.add_heading("2.1 Objectifs primaires — sécurité", level=2)
+    doc.add_heading("2.1 Objectifs primaires - sécurité", level=2)
     _p(doc, "<Ce que le client cherche à établir sur sa sécurité réelle.>")
-    doc.add_heading("2.2 Objectifs secondaires — conformité", level=2)
+    doc.add_heading("2.2 Objectifs secondaires - conformité", level=2)
     _p(doc, "<Obligation réglementaire, exigence d'un client, appel d'offres.>")
     doc.add_heading("2.3 Ce que la mission ne permettra pas de conclure", level=2)
     _p(doc, "<Formulé explicitement. Une mission de test d'intrusion n'est pas un "
@@ -227,7 +227,7 @@ def roe(chemin: str) -> None:
     for t in ["le déni de service, les tests de charge et l'épuisement de ressources ;",
               "l'ingénierie sociale visant les personnes (hameçonnage, vishing, prétexte) ;",
               "l'intrusion physique ;",
-              "l'exfiltration réelle de données — la preuve d'accès se fait par un "
+              "l'exfiltration réelle de données - la preuve d'accès se fait par un "
               "extrait minimal anonymisé ou par capture de métadonnées ;",
               "la modification ou la destruction de données de production ;",
               "le recours à des codes d'exploitation publics non maîtrisés en production ;",
@@ -348,7 +348,7 @@ def roe(chemin: str) -> None:
     doc.add_page_break()
     historique_versions(doc)
 
-    pied_de_page(doc.sections[0], f"Règles d'engagement — <CLIENT> — {CONFIDENTIEL}")
+    pied_de_page(doc.sections[0], f"Règles d'engagement - <CLIENT> - {CONFIDENTIEL}")
     doc.save(chemin); print("écrit", chemin)
 
 
@@ -399,7 +399,7 @@ def autorisation(chemin: str) -> None:
     doc.add_heading("Contact de vérification", level=2)
     _p(doc, "En cas de doute sur l'authenticité du présent document ou sur la "
             "légitimité d'une activité observée, contacter immédiatement : "
-            "<Nom> — <fonction> — <téléphone joignable 24/7>.")
+            "<Nom> - <fonction> - <téléphone joignable 24/7>.")
 
     doc.add_paragraph()
     _p(doc, "Fait à <lieu>, le <date>.")
@@ -411,7 +411,7 @@ def autorisation(chemin: str) -> None:
               "pour des systèmes appartenant à des tiers (hébergeurs, fournisseurs "
               "de services) : celle-ci doit être obtenue séparément par le Client.")
 
-    pied_de_page(doc.sections[0], "Autorisation de test — à conserver pendant les tests")
+    pied_de_page(doc.sections[0], "Autorisation de test - à conserver pendant les tests")
     doc.save(chemin); print("écrit", chemin)
 
 
@@ -504,7 +504,7 @@ def msa(chemin: str) -> None:
     doc.add_paragraph()
     _p(doc, "Fait à <lieu>, le <date>, en deux exemplaires originaux.")
     bloc_signatures(doc, ["Pour le Client", f"Pour {C.SOCIETE}"])
-    pied_de_page(doc.sections[0], f"Contrat-cadre de services — {CONFIDENTIEL}")
+    pied_de_page(doc.sections[0], f"Contrat-cadre de services - {CONFIDENTIEL}")
     doc.save(chemin); print("écrit", chemin)
 
 
@@ -577,7 +577,7 @@ def sow(chemin: str) -> None:
 
     doc.add_paragraph()
     bloc_signatures(doc, ["Pour le Client", f"Pour {C.SOCIETE}"])
-    pied_de_page(doc.sections[0], f"Énoncé des travaux — <CLIENT> — {CONFIDENTIEL}")
+    pied_de_page(doc.sections[0], f"Énoncé des travaux - <CLIENT> - {CONFIDENTIEL}")
     doc.save(chemin); print("écrit", chemin)
 
 

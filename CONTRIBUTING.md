@@ -15,7 +15,7 @@ y compris le fondateur.
 | `feat/` | Nouvelle procédure, nouveau gabarit, nouvelle offre | `feat/methodo-ai-redteam` |
 | `fix/` | Correction d'une procédure existante | `fix/roe-clause-arret-urgence` |
 | `docs/` | Documentation, README, veille | `docs/veille-outils-defcon` |
-| `legal/` | **Tout document juridique**— relecture par 2 personnes | `legal/modele-nda-bilateral` |
+| `legal/` | **Tout document juridique**- relecture par 2 personnes | `legal/modele-nda-bilateral` |
 | `mission/` | Une mission client | `mission/acme-pentest-webapp` |
 | `chore/` | Outillage, CI, maintenance | `chore/gitleaks-ci` |
 
@@ -109,7 +109,7 @@ prouver ce qui était notre standard à la date des tests.
 - Un commit = une intention.
 - Un `README.md` par dossier, qui explique ce qu'on y met **et ce qu'on n'y met pas**.
 - On écrit en **Markdown**. Les `.docx` et PDF sont **générés** (`90-templates/`),
-  jamais édités à la main puis committés — sinon les revues deviennent illisibles.
+  jamais édités à la main puis committés - sinon les revues deviennent illisibles.
 - Pas de binaire lourd hors Git LFS.
 - Français pour la doctrine interne et les livrables clients francophones ;
   anglais pour les termes techniques consacrés (on n'écrit pas « hameçonnage

@@ -1,6 +1,6 @@
-# Méthodologie — Évaluation de sécurité applicative
+# Méthodologie - Évaluation de sécurité applicative
 
-**Version** : v0.1 — **Statut** : brouillon, à éprouver sur la première mission
+**Version** : v0.1 - **Statut** : brouillon, à éprouver sur la première mission
 **Référentiels** : OWASP ASVS + MASTG + API Security Top 10
 
 Sources officielles : `00-societe/smsi/REFERENCES.md`.
@@ -25,7 +25,7 @@ classeur de mission.
 
 ## Ce qui est propre à ce service
 
-- ASVS transforme un avis d'expert en **niveau d'assurance mesurable**. C'est ce qui rend la prestation re-mesurable l'année suivante — donc refacturable.
+- ASVS transforme un avis d'expert en **niveau d'assurance mesurable**. C'est ce qui rend la prestation re-mesurable l'année suivante - donc refacturable.
 - Le **contrôle d'accès** et la **logique métier** sont les deux domaines où l'automatisation ne trouve rien et où se situe la valeur.
 - L'interlocuteur est une équipe de développement : le rapport doit être exploitable par un développeur, avec la correction et non seulement le constat.
 

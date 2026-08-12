@@ -1,6 +1,6 @@
 # Posture : comment nous abordons une entreprise
 
-**Version** : v0.1 — **Statut** : à valider par les 5 associés
+**Version** : v0.1 - **Statut** : à valider par les 5 associés
 
 Ce document se lit **avant** le premier rendez-vous, par tout le monde. Il ne
 décrit pas des techniques de vente : il décrit une posture. La technique varie,
@@ -13,7 +13,7 @@ la posture ne change jamais.
 ### On vend une relation, pas une mission
 
 Une entreprise qui nous appelle a un problème qu'elle ne sait pas encore nommer.
-Notre travail commence par l'aider à le nommer — même si la conclusion est
+Notre travail commence par l'aider à le nommer - même si la conclusion est
 qu'elle n'a pas besoin de nous tout de suite.
 
 ### On ne vend jamais par la peur
@@ -25,7 +25,7 @@ chaque année.
 
 Concrètement : pas de « vous allez vous faire pirater », pas de statistiques
 mondiales anxiogènes, pas de démonstration d'intrusion sur ses systèmes pour
-impressionner — c'est en plus illégal sans autorisation.
+impressionner - c'est en plus illégal sans autorisation.
 
 ### On dit ce qu'on ne sait pas faire
 
@@ -54,20 +54,20 @@ rendez-vous. Jamais.
 | 5 min | Qui nous sommes, en trois phrases. Pas la plaquette complète. |
 | **30 min** | **Questions. On écoute.** |
 | 10 min | On reformule ce qu'on a compris de leur besoin. On se fait corriger. |
-| 10 min | On explique comment on travaillerait — méthode, cadre, garanties |
+| 10 min | On explique comment on travaillerait - méthode, cadre, garanties |
 | 5 min | Prochaine étape et délai de réponse |
 
 ### Les questions qui comptent
 
 1. **Qu'est-ce qui vous inquiète le plus aujourd'hui ?** (la vraie question)
 2. Qu'est-ce qui déclenche cette démarche : un incident, un client, un auditeur,
-   une réglementation ? — *la réponse détermine tout le reste*
+   une réglementation ? - *la réponse détermine tout le reste*
 3. Qui, chez vous, porte le sujet sécurité ? À qui rend-il compte ?
 4. Avez-vous déjà fait un audit ? Qu'en avez-vous fait ?
 5. Que se passe-t-il si votre <application / service> est indisponible 48 h ?
 6. Quelles données traitez-vous ? Personnelles, bancaires, de santé ?
 7. Qui héberge quoi ?
-8. **Quel est votre budget et votre échéance ?** — posée simplement, sans gêne
+8. **Quel est votre budget et votre échéance ?** - posée simplement, sans gêne
 
 La question 4 est la plus révélatrice. « Nous avons fait un audit et le rapport
 est dans un tiroir » vous dit que le problème n'est pas technique : c'est que le
@@ -110,7 +110,7 @@ vous n'arrivez pas à faire passer. » C'est vrai, et ça change tout.
 
 Le piège : le client demande « un pentest » sans savoir ce qu'il veut prouver.
 La question à poser : **« Qu'est-ce que vous ferez du rapport ? »** Selon la
-réponse — rassurer un client, satisfaire un auditeur, prioriser un budget — le
+réponse - rassurer un client, satisfaire un auditeur, prioriser un budget - le
 périmètre et le format du livrable changent complètement.
 
 ### AI RedTeaming
@@ -135,7 +135,7 @@ patient.
 L'interlocuteur est une **équipe de développement**, pas une direction sécurité.
 Elle craint qu'on lui impose des outils qui cassent sa chaîne et la ralentissent.
 Poser d'abord : « Combien de temps prend votre chaîne aujourd'hui ? » Toute
-recommandation qui l'allonge de plus de 10 % sera contournée dans les six mois —
+recommandation qui l'allonge de plus de 10 % sera contournée dans les six mois -
 autant le savoir et faire autrement.
 
 ### SOC et outillage défensif
@@ -154,7 +154,7 @@ est renvoyé à un partenaire. Le dire explicitement crédibilise le reste.
 
 Le piège : le client veut « piéger ses employés ». Refuser cette formulation dès
 le premier rendez-vous. Une campagne utilisée pour sanctionner détruit la
-confiance et l'efficacité du programme — et se retourne contre le client.
+confiance et l'efficacité du programme - et se retourne contre le client.
 Reformuler : mesurer collectivement, anonymement, pour progresser.
 
 ### Infrastructure, VPN, Cloudflare

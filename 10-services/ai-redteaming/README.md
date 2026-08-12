@@ -3,7 +3,7 @@
 **Code de service** : `AIRT` · **Version de doctrine** : `v0.1` (brouillon) ·
 **Statut commercial** : non vendable tant que la doctrine n'est pas en `v1.0`
 
-> Test offensif des systèmes à base d'IA : LLM, agents, RAG, pipelines de données. Notre différenciateur — très peu d'acteurs sont structurés sur ce métier.
+> Test offensif des systèmes à base d'IA : LLM, agents, RAG, pipelines de données. Notre différenciateur - très peu d'acteurs sont structurés sur ce métier.
 
 ---
 
@@ -11,10 +11,10 @@
 
 | Référentiel | Rôle |
 |---|---|
-| **OWASP Top 10 for LLM Applications** | Taxonomie reconnue par le marché |
-| **MITRE ATLAS** | TTP adverses IA — pendant d'ATT&CK |
-| **NIST AI RMF 1.0 + profil GenAI** | Gouvernance, préparation à l'EU AI Act |
-| **ISO/IEC 42001** | En réserve : offre gouvernance IA |
+| [**OWASP Top 10 for LLM Applications 2025**](https://genai.owasp.org/llm-top-10/) | Taxonomie reconnue par le marché |
+| [**MITRE ATLAS**](https://atlas.mitre.org/) | TTP adverses IA - pendant d'ATT&CK |
+| [**NIST AI RMF 1.0**](https://www.nist.gov/itl/ai-risk-management-framework) + [profil GenAI](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf) | Gouvernance, préparation à l'EU AI Act |
+| [**ISO/IEC 42001**](https://www.iso.org/standard/81230.html) | En réserve : offre gouvernance IA |
 
 Justification du choix : [`00-societe/smsi/REFERENTIELS.md`](../../00-societe/smsi/REFERENTIELS.md).
 
@@ -40,12 +40,12 @@ Justification du choix : [`00-societe/smsi/REFERENTIELS.md`](../../00-societe/sm
 ### Ce qui n'y est pas
 
 - Attaques sur le modèle de fondation du fournisseur (hors périmètre client)
-- Génération de contenu illégal à titre de démonstration — la preuve se fait par un marqueur inoffensif
+- Génération de contenu illégal à titre de démonstration - la preuve se fait par un marqueur inoffensif
 - Tests dépassant les conditions d'utilisation du fournisseur de modèle
 
 > Cette section n'est pas décorative : elle est **reprise mot pour mot** dans la
 > proposition commerciale et dans le RoE. Un désaccord de périmètre se règle ici,
-> avant la mission — jamais pendant.
+> avant la mission - jamais pendant.
 
 ## 4. Préalables bloquants
 
@@ -71,6 +71,7 @@ Aucune action technique ne démarre tant que ces points ne sont pas satisfaits :
 | [`procedures/PRO-AIRT-100-tests-adverses.md`](procedures/PRO-AIRT-100-tests-adverses.md) | Exécution, catégorie par catégorie OWASP LLM 2025 |
 | [`procedures/PRO-AIRT-200-notation-et-restitution.md`](procedures/PRO-AIRT-200-notation-et-restitution.md) | Notation adaptée au non-déterminisme, hiérarchie des corrections |
 | [`checklists/checklist-couverture-owasp-llm.md`](checklists/checklist-couverture-owasp-llm.md) | Couverture LLM01 à LLM10, à recopier en annexe du rapport |
+| [`outillage/OUTILLAGE.md`](outillage/OUTILLAGE.md) | Socle d'outils, couverture réelle par catégorie, et ce qu'aucun outil ne couvre |
 
 La collecte et la destruction des preuves suivent la procédure commune
 [`PRO-PT-100`](../pentest-audit/procedures/PRO-PT-100-collecte-de-preuves.md).
@@ -91,6 +92,7 @@ La collecte et la destruction des preuves suivent la procédure commune
 - [x] Méthodologie (v0.1)
 - [x] SOP de cadrage, d'exécution et de restitution
 - [x] Checklist de couverture OWASP LLM 2025
+- [x] Socle d'outillage, avec sa couverture réelle et ses limites
 - [ ] Valider le gabarit de livrable sur une mission blanche
 - [ ] Faire relire les clauses juridiques spécifiques
 - [ ] Fixer la grille tarifaire (`00-societe/commercial/`)

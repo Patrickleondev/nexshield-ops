@@ -40,7 +40,7 @@ TAILLES = {"t1": 20, "t2": 16, "t3": 13, "corps": 10.5, "petit": 9, "mono": 9.5}
 
 SOCIETE = "NexShield"
 BASELINE = "Next Threat. Next Shield."
-CLASSIFICATION = "CONFIDENTIEL — DIFFUSION RESTREINTE"
+CLASSIFICATION = "CONFIDENTIEL - DIFFUSION RESTREINTE"
 
 
 def rgb(hexa: str) -> tuple[int, int, int]:

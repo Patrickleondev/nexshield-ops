@@ -1,6 +1,6 @@
 # Pilotage : tâches, répartition, délais
 
-**Version** : v0.1 — **Statut** : à valider par les 5 associés
+**Version** : v0.1 - **Statut** : à valider par les 5 associés
 
 Ce document répond à une seule question : **qui fait quoi, pour quand, et
 comment on le sait**. À cinq, on tient par la discussion. À huit, on ne tient
@@ -12,8 +12,8 @@ plus. Ce cadre est écrit maintenant, pendant qu'il est encore facile à appliqu
 
 | Niveau | Horizon | Outil | Cadence |
 |---|---|---|---|
-| **Société** | Année | `Pilotage-societe.xlsx` — portefeuille, plan de charge, compétences | Revue mensuelle |
-| **Mission** | Semaines | `Classeur-mission.xlsx` — onglet Tâches | Point quotidien de 10 min |
+| **Société** | Année | `Pilotage-societe.xlsx` - portefeuille, plan de charge, compétences | Revue mensuelle |
+| **Mission** | Semaines | `Classeur-mission.xlsx` - onglet Tâches | Point quotidien de 10 min |
 | **Doctrine** | Continu | Issues et PR GitHub | Au fil de l'eau |
 
 Trois niveaux, trois outils, aucun recouvrement. Une tâche de mission ne va pas
@@ -27,7 +27,7 @@ dans GitHub ; une évolution de méthodologie ne va pas dans un classeur.
 
 Pas « l'équipe technique », pas « quelqu'un » : un nom. Une tâche portée par deux
 personnes n'est portée par personne. On désigne un **responsable** et,
-éventuellement, un **appui** — le responsable reste seul comptable.
+éventuellement, un **appui** - le responsable reste seul comptable.
 
 Chaque tâche porte :
 
@@ -36,7 +36,7 @@ Chaque tâche porte :
 | Responsable | Un seul nom |
 | Échéance | Une date, jamais « dès que possible » |
 | Charge estimée | En jours, avant de commencer |
-| Charge réelle | En jours, à la fin — c'est ce qui rend les devis suivants justes |
+| Charge réelle | En jours, à la fin - c'est ce qui rend les devis suivants justes |
 | Statut | À faire · En cours · Bloqué · En revue · Terminé |
 | Bloqué par | Obligatoire si le statut est « Bloqué » |
 
@@ -65,7 +65,7 @@ Règles de prudence, apprises par tout le monde à ses dépens :
 
 ### Délais type par mission
 
-À affiner après vos cinq premières missions — ce sont des ordres de grandeur de
+À affiner après vos cinq premières missions - ce sont des ordres de grandeur de
 départ, pas des engagements.
 
 | Mission | Exécution | Rédaction | Total | Personnes |
@@ -102,7 +102,7 @@ deux jours de retard annoncés à l'avance.
 | **Revue des accès** | Trimestrielle | 30 min | Qui a accès à quoi (exigence ISO 27001) |
 
 Le point quotidien tient en 10 minutes **debout**. S'il dure 40 minutes, c'est
-qu'un sujet mérite une réunion dédiée — on le sort et on continue.
+qu'un sujet mérite une réunion dédiée - on le sort et on continue.
 
 ---
 
@@ -131,5 +131,5 @@ Accepter une mission qu'on ne peut pas tenir coûte : la mission, le client, et 
 réputation. Refuser coûte une mission. Le calcul est vite fait.
 
 Formulation à un prospect : « Nous sommes complets jusqu'au <date>. Nous pouvons
-démarrer le <date> — ou vous orienter vers un confrère si votre échéance est plus
+démarrer le <date> - ou vous orienter vers un confrère si votre échéance est plus
 courte. » Orienter vers un confrère vous fait gagner un client la fois suivante.

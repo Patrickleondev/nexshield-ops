@@ -48,7 +48,7 @@ def feuille(wb: Workbook, titre: str, sous_titre: str, premiere: bool = False):
     ws = wb.active if premiere else wb.create_sheet()
     ws.title = titre
     ws.sheet_view.showGridLines = False
-    ws["A1"] = f"{C.SOCIETE} — {titre}"
+    ws["A1"] = f"{C.SOCIETE} - {titre}"
     ws["A1"].font = F_TITRE
     ws["A2"] = sous_titre
     ws["A2"].font = F_SOUS
@@ -111,7 +111,7 @@ def classeur_mission(chemin: str) -> None:
     wb = Workbook()
 
     # Synthèse
-    ws = feuille(wb, "Synthèse", "Tableau de bord — se remplit seul depuis les autres onglets", True)
+    ws = feuille(wb, "Synthèse", "Tableau de bord - se remplit seul depuis les autres onglets", True)
     ws["A4"] = "Identification"
     ws["A4"].font = Font(name=C.POLICE_TITRE, size=12, bold=True, color=C.SECONDAIRE)
     champs = [("Client", ""), ("Mission", ""), ("Référence", "<CLIENT>-<type>-<nn>"),
@@ -153,7 +153,7 @@ def classeur_mission(chemin: str) -> None:
 
     ws["A16"] = "Ce classeur ne contient AUCUNE preuve brute ni donnée client sensible."
     ws["A16"].font = Font(name=C.POLICE_CORPS, size=9, bold=True, color="991B1B")
-    ws["A17"] = "Les preuves vivent au coffre chiffré — voir SECURITY.md §2."
+    ws["A17"] = "Les preuves vivent au coffre chiffré - voir SECURITY.md §2."
     ws["A17"].font = F_AIDE
 
     # Vulnérabilités
@@ -315,7 +315,7 @@ def classeur_pilotage(chemin: str) -> None:
 # --- SoA ISO 27001 -----------------------------------------------------------
 def classeur_soa(chemin: str) -> None:
     wb = Workbook()
-    ws = feuille(wb, "SoA", "Déclaration d'applicabilité ISO/IEC 27001:2022 — Annexe A, 93 mesures.", True)
+    ws = feuille(wb, "SoA", "Déclaration d'applicabilité ISO/IEC 27001:2022 - Annexe A, 93 mesures.", True)
     themes = [("5", "Mesures organisationnelles", 37),
               ("6", "Mesures liées aux personnes", 8),
               ("7", "Mesures physiques", 14),
@@ -326,7 +326,7 @@ def classeur_soa(chemin: str) -> None:
     total = sum(n for _, _, n in themes)
     d = tableau(ws, 5, cols, "SoA", total + 5,
                 aide="Les intitulés officiels des 93 mesures sont à recopier depuis la norme "
-                     "(document sous droits — ne pas le versionner dans le dépôt).")
+                     "(document sous droits - ne pas le versionner dans le dépôt).")
     r = d
     for num, nom, nb in themes:
         for i in range(1, nb + 1):

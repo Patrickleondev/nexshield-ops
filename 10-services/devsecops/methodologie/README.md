@@ -1,6 +1,6 @@
-# Méthodologie — Audit de maturité et sécurisation de la chaîne
+# Méthodologie - Audit de maturité et sécurisation de la chaîne
 
-**Version** : v0.1 — **Statut** : brouillon, à éprouver sur la première mission
+**Version** : v0.1 - **Statut** : brouillon, à éprouver sur la première mission
 **Référentiels** : OWASP SAMM 2.0 + NIST SSDF (SP 800-218) + SLSA
 
 Sources officielles : `00-societe/smsi/REFERENCES.md`.

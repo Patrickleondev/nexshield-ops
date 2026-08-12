@@ -1,6 +1,6 @@
 # Gabarits documentaires
 
-## Pourquoi la doctrine est en Markdown — et pourquoi les livrables ne le sont pas
+## Pourquoi la doctrine est en Markdown - et pourquoi les livrables ne le sont pas
 
 Ce sont deux besoins différents, et c'est la raison de la séparation.
 
@@ -14,7 +14,7 @@ cinq, cinq `.docx` retouchés à la main donnent cinq mises en page en trois moi
 **Les livrables et les outils de travail sont en DOCX, XLSX et PPTX** parce que
 c'est ce que le client ouvre, annote et fait circuler, et parce qu'un tableau de
 suivi a besoin de formules, de listes déroulantes et de mise en forme
-conditionnelle — ce qu'un fichier texte ne fera jamais.
+conditionnelle - ce qu'un fichier texte ne fera jamais.
 
 La règle : **on n'édite jamais un gabarit à la main pour le committer**.
 Les gabarits sont produits par script, en PR, à partir d'une charte unique.
@@ -55,16 +55,16 @@ la conversion PDF.
 | `SoA-ISO27001.xlsx` | XLSX | Déclaration d'applicabilité, 93 mesures de l'Annexe A |
 
 Les consignes de rédaction sont intégrées **dans** les gabarits, en cyan, sous
-la mention « Consigne interne — supprimer avant remise ». Elles disent quoi
+la mention « Consigne interne - supprimer avant remise ». Elles disent quoi
 écrire dans chaque section et pourquoi certaines ne sont pas supprimables.
 
 ---
 
 ## Ce qui est automatisé dans les classeurs
 
-Ce ne sont pas des tableaux vides — c'est ce qui fait la différence à l'usage :
+Ce ne sont pas des tableaux vides - c'est ce qui fait la différence à l'usage :
 
-- **Listes déroulantes** sur sévérité, statut, phase PTES, séniorité — impossible
+- **Listes déroulantes** sur sévérité, statut, phase PTES, séniorité - impossible
   de saisir une valeur hors référentiel
 - **Couleurs de sévérité** appliquées automatiquement, identiques aux documents
 - **Échéance dépassée** surlignée en rouge
@@ -80,7 +80,7 @@ Ce ne sont pas des tableaux vides — c'est ce qui fait la différence à l'usag
 
 - [ ] Insérer le logo dans la couverture DOCX et PPTX (`design/`)
 - [ ] Gabarits de rapport propres à `ai-redteaming`, `secu-applicative`, `devsecops`
-- [ ] `synthese-executive.docx` — document séparé pour la direction du client
+- [ ] `synthese-executive.docx` - document séparé pour la direction du client
 - [ ] `proposition-commerciale.docx`
 - [ ] `attestation-de-test.docx` et `certificat-destruction.docx`
 - [ ] Installer les polices Inter et JetBrains Mono sur les postes de l'équipe

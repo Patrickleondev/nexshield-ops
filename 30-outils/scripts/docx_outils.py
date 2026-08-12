@@ -175,7 +175,7 @@ def couverture(doc, titre: str, sous_titre: str, metadonnees: list[list[str]],
 def consigne(doc, texte: str) -> None:
     """Consigne de rédaction interne, à supprimer avant remise au client."""
     p = doc.add_paragraph(style="NS Encadre")
-    r = p.add_run("[Consigne interne — supprimer avant remise] " + texte)
+    r = p.add_run("[Consigne interne - supprimer avant remise] " + texte)
     r.italic = True
     r.font.color.rgb = RGBColor(*C.rgb(C.ACCENT))
 

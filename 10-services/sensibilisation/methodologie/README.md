@@ -1,6 +1,6 @@
-# Méthodologie — Programme de sensibilisation mesuré
+# Méthodologie - Programme de sensibilisation mesuré
 
-**Version** : v0.1 — **Statut** : brouillon, à éprouver sur la première mission
+**Version** : v0.1 - **Statut** : brouillon, à éprouver sur la première mission
 **Référentiels** : NIST SP 800-50r1 + kits ENISA + ISO 27001 A.6.3
 
 Sources officielles : `00-societe/smsi/REFERENCES.md`.
@@ -27,7 +27,7 @@ classeur de mission.
 
 - **La mesure est collective et anonymisée.** Une campagne utilisée pour sanctionner un employé détruit la confiance et l'efficacité du programme. Refuser cette formulation dès le premier rendez-vous.
 - Le **taux de signalement** compte plus que le taux de clic : il mesure la capacité de l'organisation à réagir, pas la faillibilité des personnes.
-- NIST SP 800-50 impose de mesurer l'efficacité — c'est ce qui justifie la reconduction annuelle. Une sensibilisation non mesurée ne se vend qu'une fois.
+- NIST SP 800-50 impose de mesurer l'efficacité - c'est ce qui justifie la reconduction annuelle. Une sensibilisation non mesurée ne se vend qu'une fois.
 
 ---
 

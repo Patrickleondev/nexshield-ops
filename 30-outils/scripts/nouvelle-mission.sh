@@ -35,7 +35,7 @@ cp "$BUILD/Classeur-mission.xlsx"        "$DIR/"
 cp "$BUILD/Modele-restitution.pptx"      "$DIR/rapport/"
 
 cat > "$DIR/README.md" <<FICHE
-# $CLIENT — $TYPE #$NN
+# $CLIENT - $TYPE #$NN
 
 | | |
 |---|---|

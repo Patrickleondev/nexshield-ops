@@ -39,12 +39,12 @@ Justification du choix : [`00-societe/smsi/REFERENTIELS.md`](../../00-societe/sm
 
 ### Ce qui n'y est pas
 
-- Surveillance 24/7 (offre SOC managé — à construire, ne pas vendre avant d'être capables de la tenir)
+- Surveillance 24/7 (offre SOC managé - à construire, ne pas vendre avant d'être capables de la tenir)
 - Réponse à incident en urgence (offre distincte, contrat de disponibilité)
 
 > Cette section n'est pas décorative : elle est **reprise mot pour mot** dans la
 > proposition commerciale et dans le RoE. Un désaccord de périmètre se règle ici,
-> avant la mission — jamais pendant.
+> avant la mission - jamais pendant.
 
 ## 4. Préalables bloquants
 

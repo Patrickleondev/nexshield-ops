@@ -11,11 +11,11 @@ demander à son auteur.
 AAAAMMJJ-<CLIENT>-<TYPE>-<titre-en-minuscules>-v<X.Y>.<ext>
 ```
 
-- `AAAAMMJJ` — date de **publication** de la version, pas de création.
-- `<CLIENT>` — code client en MAJUSCULES (3 à 8 lettres). `INTERNE` si document interne.
-- `<TYPE>` — voir table ci-dessous.
-- `<titre>` — minuscules, tirets, sans accent, sans espace.
-- `v<X.Y>` — `v0.x` = brouillon, `v1.0` = première version livrée au client.
+- `AAAAMMJJ` - date de **publication** de la version, pas de création.
+- `<CLIENT>` - code client en MAJUSCULES (3 à 8 lettres). `INTERNE` si document interne.
+- `<TYPE>` - voir table ci-dessous.
+- `<titre>` - minuscules, tirets, sans accent, sans espace.
+- `v<X.Y>` - `v0.x` = brouillon, `v1.0` = première version livrée au client.
 
 ```
 20260815-ACME-ROE-pentest-webapp-v1.0.md
@@ -70,7 +70,7 @@ Numérotation par centaines : `001-099` cadrage, `100-199` exécution,
 20-missions/<annee>/<CLIENT>-<type>-<nn>/
 ```
 
-`20-missions/2026/ACME-pentest-01/` — le `-01` permet une deuxième mission du
+`20-missions/2026/ACME-pentest-01/` - le `-01` permet une deuxième mission du
 même type pour le même client dans l'année.
 
 Contenu obligatoire de chaque dossier de mission :
@@ -97,7 +97,7 @@ tout le reste crée des problèmes tôt ou tard.
 ```
 
 **Exception unique** : les dossiers de mission, qui portent un code client en
-majuscules pour être repérables d'un coup d'œil — `20-missions/2026/ACME-pentest-01/`.
+majuscules pour être repérables d'un coup d'œil - `20-missions/2026/ACME-pentest-01/`.
 
 Le préfixe numérique des dossiers racine (`00-`, `10-`, `20-`…) fixe l'ordre
 d'affichage et donc l'ordre de lecture. Il est espacé par dizaines pour pouvoir
@@ -135,7 +135,7 @@ une revue impossible.
    ```
    Un lien mort dans la doctrine est un lecteur perdu.
 4. Vérifier les références dans les scripts, le `Makefile`, `CODEOWNERS` et les
-   workflows CI — ce sont les oublis classiques.
+   workflows CI - ce sont les oublis classiques.
 5. `make links` pour confirmer qu'aucun lien n'est cassé.
 6. **Consigner dans `CHANGELOG.md`**, section « Modifié ». Un renommage est un
    changement visible : quelqu'un cherchera l'ancien nom.
@@ -154,7 +154,7 @@ sous le bon nom, et l'ancienne reste en place. On ne réécrit pas le passé.
 ### Renommer la société
 
 `make rename NOM="NouveauNom"`. Relire ensuite `CODEOWNERS`,
-`30-outils/scripts/charte.py` et les documents déjà générés — la commande ne
+`30-outils/scripts/charte.py` et les documents déjà générés - la commande ne
 touche pas aux binaires.
 
 ---
@@ -163,7 +163,7 @@ touche pas aux binaires.
 
 Le numéro de version vit **à trois endroits**, et les trois doivent concorder :
 
-1. dans le **nom du fichier** — `…-v1.0.docx` ;
+1. dans le **nom du fichier** - `…-v1.0.docx` ;
 2. sur la **page de garde** du document ;
 3. dans le tableau **Historique des versions**, en fin de document.
 
@@ -191,8 +191,8 @@ changé et pourquoi. C'est plus coûteux, et c'est la seule option défendable.
 
 Ce sont deux choses distinctes, et un rapport porte les deux :
 
-- **Version du document** : `v1.0` — cette instance du rapport.
-- **Version de doctrine** : `pentest-audit v1.2` — la méthodologie sous laquelle
+- **Version du document** : `v1.0` - cette instance du rapport.
+- **Version de doctrine** : `pentest-audit v1.2` - la méthodologie sous laquelle
   la mission a été menée.
 
 C'est cette seconde information qui vous protège en cas de contestation : elle
@@ -214,10 +214,10 @@ technique, complété d'une **criticité métier** décidée avec le client.
 
 | Niveau | CVSS v4.0 | Délai de correction recommandé |
 |---|---|---|
-| Critique | 9.0 – 10.0 | Immédiat (< 72 h), notification pendant la mission |
-| Élevée | 7.0 – 8.9 | 30 jours |
-| Moyenne | 4.0 – 6.9 | 90 jours |
-| Faible | 0.1 – 3.9 | Prochain cycle de maintenance |
+| Critique | 9.0 - 10.0 | Immédiat (< 72 h), notification pendant la mission |
+| Élevée | 7.0 - 8.9 | 30 jours |
+| Moyenne | 4.0 - 6.9 | 90 jours |
+| Faible | 0.1 - 3.9 | Prochain cycle de maintenance |
 | Information | 0.0 | Aucune obligation |
 
 Un score CVSS **seul** ne justifie jamais une sévérité dans un rapport : la
@@ -232,7 +232,7 @@ de l'actif. Toute divergence entre CVSS et criticité affichée est **justifiée
 ```
 
 `ACME-2026-001`. Numérotation continue par client et par année, tous types de
-missions confondus — pour pouvoir suivre une vulnérabilité d'un pentest à sa
+missions confondus - pour pouvoir suivre une vulnérabilité d'un pentest à sa
 contre-vérification.
 
 ---

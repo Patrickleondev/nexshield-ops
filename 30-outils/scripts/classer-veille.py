@@ -62,13 +62,13 @@ EXCLUS = {d.lower() for d in (
 _m("a-trier", "Barre des favoris", "Other Bookmarks", "Synced Bookmarks")
 
 TITRES = {
-    "pentest-audit": "Pentest & audit — outils et ressources",
-    "ai-redteaming": "AI RedTeaming — outils et ressources",
-    "secu-applicative": "Sécurité applicative — outils et ressources",
-    "soc-ai-tools": "SOC & défensif — outils et ressources",
-    "devsecops": "DevSecOps & infrastructure — outils et ressources",
+    "pentest-audit": "Pentest & audit - outils et ressources",
+    "ai-redteaming": "AI RedTeaming - outils et ressources",
+    "secu-applicative": "Sécurité applicative - outils et ressources",
+    "soc-ai-tools": "SOC & défensif - outils et ressources",
+    "devsecops": "DevSecOps & infrastructure - outils et ressources",
     "outillage-ia": "Outillage IA généraliste",
-    "montee-competence": "Montée en compétence — labs, CTF, entraînement",
+    "montee-competence": "Montée en compétence - labs, CTF, entraînement",
     "references-et-blogs": "Références, blogs et veille",
     "societe": "Création et gestion de la société",
     "a-trier": "À trier",
@@ -76,7 +76,7 @@ TITRES = {
 
 
 # Un export de favoris contient des URL de session : jetons OAuth, JWT, clés de
-# partage. Ils ne doivent pas entrer dans le dépôt — voir SECURITY.md §1.
+# partage. Ils ne doivent pas entrer dans le dépôt - voir SECURITY.md §1.
 SENSIBLES = re.compile(
     r"(?:^|[?&#])(?:id_token|access_token|refresh_token|token|auth|key|"
     r"api[_-]?key|secret|password|passwd|pwd|session|sig|signature|code)="
@@ -161,7 +161,7 @@ def main() -> int:
             f"# {TITRES.get(dest, dest)}",
             "",
             f"> {n} entrées, issues de l'export de favoris. Classement automatique",
-            f"> (`30-outils/scripts/classer-veille.py`) — **à relire et élaguer à la main**.",
+            f"> (`30-outils/scripts/classer-veille.py`) - **à relire et élaguer à la main**.",
             "",
         ]
         for origine, items in sorted(sections.items()):

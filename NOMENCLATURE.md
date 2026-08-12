@@ -1,4 +1,4 @@
-# Nomenclature — table de référence
+# Nomenclature - table de référence
 
 Une seule page pour retrouver n'importe quel code. Les **règles** sont dans
 [`CONVENTIONS.md`](CONVENTIONS.md) ; ceci en est l'aide-mémoire.
@@ -19,7 +19,7 @@ Une seule page pour retrouver n'importe quel code. Les **règles** sont dans
 | `PRIV` | X-Privacy | `10-services/x-privacy/` |
 | `SENS` | Sensibilisation | `10-services/sensibilisation/` |
 | `INFRA` | Infrastructure, VPN, Cloudflare | `10-services/infra-vpn-cloudflare/` |
-| `GEN` | Transverse, tous services | — |
+| `GEN` | Transverse, tous services | - |
 
 ---
 
@@ -32,15 +32,15 @@ Une seule page pour retrouver n'importe quel code. Les **règles** sont dans
 | `SOW` | Énoncé des travaux | Direction client |
 | `ROE` | Règles d'engagement | Contact technique + direction |
 | `AUTH` | Autorisation de test | Personne ayant autorité sur les actifs |
-| `PROPO` | Proposition commerciale | — |
-| `RAPPORT` | Rapport de mission | — |
-| `SYNTH` | Synthèse exécutive | — |
-| `RETEST` | Rapport de contre-vérification | — |
+| `PROPO` | Proposition commerciale | - |
+| `RAPPORT` | Rapport de mission | - |
+| `SYNTH` | Synthèse exécutive | - |
+| `RETEST` | Rapport de contre-vérification | - |
 | `ATTEST` | Attestation de test | Prestataire |
 | `CERT` | Certificat de destruction | Prestataire |
-| `PROC` | Procédure interne | — |
-| `POL` | Politique interne (SMSI) | — |
-| `ADR` | Décision d'architecture ou de doctrine | — |
+| `PROC` | Procédure interne | - |
+| `POL` | Politique interne (SMSI) | - |
+| `ADR` | Décision d'architecture ou de doctrine | - |
 
 Les cinq premiers sont **bloquants** : aucune commande n'est lancée sans eux.
 
@@ -90,7 +90,7 @@ ACME-2026-001
 ```
 
 Numérotation continue par client et par année, **tous types de missions
-confondus** — pour suivre une vulnérabilité d'un pentest à sa contre-vérification.
+confondus** - pour suivre une vulnérabilité d'un pentest à sa contre-vérification.
 
 ### Preuve
 
@@ -122,12 +122,12 @@ Types : `feat`, `fix`, `docs`, `chore`, `refactor`, `sec`, `legal`, `mission`.
 
 | Sévérité | CVSS v4.0 | Délai recommandé | Couleur |
 |---|---|---|---|
-| Critique | 9.0 – 10.0 | < 72 h, notification pendant la mission | `#991B1B` |
-| Élevée | 7.0 – 8.9 | 30 jours | `#C2410C` |
-| Moyenne | 4.0 – 6.9 | 90 jours | `#A16207` |
-| Faible | 0.1 – 3.9 | Prochain cycle de maintenance | `#0369A1` |
+| Critique | 9.0 - 10.0 | < 72 h, notification pendant la mission | `#991B1B` |
+| Élevée | 7.0 - 8.9 | 30 jours | `#C2410C` |
+| Moyenne | 4.0 - 6.9 | 90 jours | `#A16207` |
+| Faible | 0.1 - 3.9 | Prochain cycle de maintenance | `#0369A1` |
 | Information | 0.0 | Aucune obligation | `#475569` |
-| Corrigée | — | — | `#15803D` |
+| Corrigée | - | - | `#15803D` |
 
 Ces couleurs ne changent jamais, dans aucun document. La couleur n'est jamais
 seule porteuse d'information : la sévérité s'écrit toujours en toutes lettres.
@@ -234,7 +234,7 @@ tout renuméroter.
 
 ## 10. Renommer
 
-**Toujours `git mv`**, jamais supprimer puis recréer — sinon l'historique est
+**Toujours `git mv`**, jamais supprimer puis recréer - sinon l'historique est
 perdu et la revue devient illisible. Une PR dédiée, jamais renommage et
 modification dans le même commit.
 

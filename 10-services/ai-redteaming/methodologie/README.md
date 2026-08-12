@@ -1,6 +1,6 @@
-# Méthodologie — Test offensif de systèmes à base d'IA
+# Méthodologie - Test offensif de systèmes à base d'IA
 
-**Version** : v0.1 — **Statut** : brouillon, à éprouver sur la première mission
+**Version** : v0.1 - **Statut** : brouillon, à éprouver sur la première mission
 **Référentiels** : OWASP Top 10 for LLM Applications (2025) + MITRE ATLAS + NIST AI RMF
 
 Sources officielles : `00-societe/smsi/REFERENCES.md`.

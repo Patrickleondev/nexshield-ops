@@ -36,11 +36,11 @@ Justification du choix : [`00-societe/smsi/REFERENTIELS.md`](../../00-societe/sm
 
 ### Ce qui n'y est pas
 
-- Sanction ou évaluation individuelle des employés — la mesure est **collective et anonymisée**. Point non négociable : une simulation de phishing utilisée pour sanctionner détruit la confiance et l'efficacité du programme.
+- Sanction ou évaluation individuelle des employés - la mesure est **collective et anonymisée**. Point non négociable : une simulation de phishing utilisée pour sanctionner détruit la confiance et l'efficacité du programme.
 
 > Cette section n'est pas décorative : elle est **reprise mot pour mot** dans la
 > proposition commerciale et dans le RoE. Un désaccord de périmètre se règle ici,
-> avant la mission — jamais pendant.
+> avant la mission - jamais pendant.
 
 ## 4. Préalables bloquants
 

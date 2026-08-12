@@ -5,7 +5,7 @@ Usage : python3 30-outils/scripts/generer_livrables.py [--out 90-templates/build
 
 Un rapport de test d'intrusion et un audit de maturité DevSecOps n'ont ni la
 même structure, ni le même lecteur, ni les mêmes annexes. Chaque service a donc
-son gabarit — construit sur un socle commun pour que l'ensemble reste cohérent.
+son gabarit - construit sur un socle commun pour que l'ensemble reste cohérent.
 
 Socle commun (toutes missions) : couverture, sommaire, synthèse exécutive,
 cadre de la mission, limites, constatations, plan d'action, annexes de
@@ -19,7 +19,7 @@ import charte as C
 from docx_outils import (consigne, couverture, nouveau_document, pied_de_page,
                          sommaire, tableau)
 
-CONFIDENTIEL = "CONFIDENTIEL — DIFFUSION RESTREINTE"
+CONFIDENTIEL = "CONFIDENTIEL - DIFFUSION RESTREINTE"
 
 # --- Définition des services -------------------------------------------------
 # champs_constatation : lignes de la fiche de vulnérabilité propre au métier
@@ -29,9 +29,9 @@ SERVICES = {
  "pentest-audit": dict(
    titre="Rapport de test d'intrusion",
    code="RAPPORT", lecteur="Direction et équipe technique",
-   refs=[("PTES", "—", "Structuration des phases"),
+   refs=[("PTES", "-", "Structuration des phases"),
          ("OWASP WSTG", "<v4.2>", "Catalogue de tests, preuve de couverture"),
-         ("NIST SP 800-115", "—", "Cadre technique"),
+         ("NIST SP 800-115", "-", "Cadre technique"),
          ("MITRE ATT&CK", "<v15>", "Qualification des techniques"),
          ("CVSS", "v4.0", "Scoring")],
    champs=[("OWASP WSTG", "WSTG-<CAT>-<NN>"), ("MITRE ATT&CK", "T<NNNN>")],
@@ -52,7 +52,7 @@ SERVICES = {
    refs=[("OWASP Top 10 for LLM Applications", "2025", "Taxonomie des risques"),
          ("MITRE ATLAS", "<version>", "TTP adverses IA"),
          ("NIST AI RMF", "1.0", "Gouvernance du risque"),
-         ("NIST AI 600-1", "—", "Profil IA générative"),
+         ("NIST AI 600-1", "-", "Profil IA générative"),
          ("CVSS", "v4.0", "Scoring, adapté au contexte IA")],
    champs=[("OWASP LLM", "LLM<NN>:2025"), ("MITRE ATLAS", "AML.T<NNNN>"),
            ("Taux de réussite", "<n/N tentatives>"),
@@ -121,7 +121,7 @@ SERVICES = {
    code="RAPPORT", lecteur="Équipe SOC et direction sécurité",
    refs=[("MITRE ATT&CK", "<v15>", "Référentiel de couverture"),
          ("MITRE D3FEND", "<version>", "Contre-mesures"),
-         ("SIGMA", "—", "Format des règles produites"),
+         ("SIGMA", "-", "Format des règles produites"),
          ("NIST SP 800-61", "r3", "Réponse à incident")],
    champs=[("Technique ATT&CK", "T<NNNN>.<NNN>"),
            ("Tactique", "<TA…>"), ("Source de journal requise", "<…>"),
@@ -143,8 +143,8 @@ SERVICES = {
  "x-privacy": dict(
    titre="Rapport d'audit de conformité en protection des données",
    code="RAPPORT", lecteur="Direction, juridique et DPO",
-   refs=[("RGPD — Règlement (UE) 2016/679", "—", "Référence"),
-         ("Loi togolaise n° 2019-014", "—", "Droit local"),
+   refs=[("RGPD - Règlement (UE) 2016/679", "-", "Référence"),
+         ("Loi togolaise n° 2019-014", "-", "Droit local"),
          ("ISO/IEC 27701", "2019", "Management de la vie privée"),
          ("NIST Privacy Framework", "1.0", "Grille d'analyse")],
    champs=[("Article RGPD", "Art. <n>"), ("Loi n° 2019-014", "Art. <n>"),
@@ -169,7 +169,7 @@ SERVICES = {
    code="RAPPORT", lecteur="Direction et ressources humaines",
    refs=[("NIST SP 800-50", "r1", "Programme de sensibilisation"),
          ("ISO/IEC 27001", "2022", "Mesure A.6.3"),
-         ("ENISA", "—", "Supports et bonnes pratiques")],
+         ("ENISA", "-", "Supports et bonnes pratiques")],
    champs=[("Population concernée", "<service, effectif>"),
            ("Type d'exercice", "<hameçonnage / atelier / module>"),
            ("Indicateur", "<taux de clic / de signalement / de saisie>")],
@@ -189,9 +189,9 @@ SERVICES = {
    titre="Rapport d'audit de durcissement d'infrastructure",
    code="RAPPORT", lecteur="Équipe infrastructure et direction technique",
    refs=[("CIS Benchmarks", "<version par produit>", "Référentiel de durcissement"),
-         ("Guides ANSSI", "—", "Recommandations complémentaires"),
+         ("Guides ANSSI", "-", "Recommandations complémentaires"),
          ("CIS Controls", "v8", "Grille de maturité"),
-         ("NIST SP 800-207", "—", "Architecture zéro confiance")],
+         ("NIST SP 800-207", "-", "Architecture zéro confiance")],
    champs=[("Mesure CIS", "<n.n.n>"), ("Niveau CIS", "<L1 / L2>"),
            ("Système concerné", "<hôte, rôle>"),
            ("Correctif automatisable", "<oui / non>")],
@@ -239,7 +239,7 @@ def rapport(slug: str, d: dict, chemin: str) -> None:
                      "de qui, dans quel cadre."),
                     ("Verdict", "Une phrase, orientée impact métier."),
                     ("Appréciation globale", "Posture générale et points forts "
-                     "constatés — il y en a toujours, et les citer crédibilise "
+                     "constatés - il y en a toujours, et les citer crédibilise "
                      "les critiques.")]:
         doc.add_heading(t, level=2)
         doc.add_paragraph(f"<{aide}>")
@@ -253,7 +253,7 @@ def rapport(slug: str, d: dict, chemin: str) -> None:
 
     doc.add_heading("Les trois priorités", level=2)
     for i in range(1, 4):
-        doc.add_paragraph(f"<Titre {i}> — <impact métier> → <action> — <effort>",
+        doc.add_paragraph(f"<Titre {i}> - <impact métier> → <action> - <effort>",
                           style="List Number")
     doc.add_page_break()
 
@@ -272,7 +272,7 @@ def rapport(slug: str, d: dict, chemin: str) -> None:
              ["Contrat-cadre / énoncé des travaux", "<référence, date>"],
              ["Règles d'engagement", "<référence, version>"],
              ["Autorisation signée", "<signataire, fonction, date>"],
-             ["Droit applicable", "<Togo — loi n° 2018-026 / autre>"]],
+             ["Droit applicable", "<Togo - loi n° 2018-026 / autre>"]],
             largeurs=[6, 10])
 
     doc.add_heading("1.4 Référentiels appliqués", level=2)
@@ -290,7 +290,7 @@ def rapport(slug: str, d: dict, chemin: str) -> None:
              ["<…>", "Relecteur qualité", "<…>"]], largeurs=[5.5, 5, 5.5])
 
     doc.add_heading("1.7 Limites de l'évaluation", level=2)
-    consigne(doc, "Section de protection — ne jamais la supprimer, même vide.")
+    consigne(doc, "Section de protection - ne jamais la supprimer, même vide.")
     doc.add_paragraph("<Ce qui n'a pas pu être évalué et pourquoi.>")
     doc.add_paragraph(
         "Cette évaluation porte sur un périmètre délimité, à un instant donné. "
@@ -299,10 +299,10 @@ def rapport(slug: str, d: dict, chemin: str) -> None:
 
     doc.add_heading("1.8 Échelle de sévérité", level=2)
     tableau(doc, ["Sévérité", "CVSS v4.0", "Définition"],
-            [["Critique", "9.0 – 10.0", "Compromission immédiate, impact majeur"],
-             ["Élevée", "7.0 – 8.9", "Compromission avec un prérequis réaliste"],
-             ["Moyenne", "4.0 – 6.9", "Impact limité ou exploitation conditionnée"],
-             ["Faible", "0.1 – 3.9", "Impact marginal"],
+            [["Critique", "9.0 - 10.0", "Compromission immédiate, impact majeur"],
+             ["Élevée", "7.0 - 8.9", "Compromission avec un prérequis réaliste"],
+             ["Moyenne", "4.0 - 6.9", "Impact limité ou exploitation conditionnée"],
+             ["Faible", "0.1 - 3.9", "Impact marginal"],
              ["Information", "0.0", "Observation sans impact direct"]],
             largeurs=[3, 3, 10])
     doc.add_page_break()
@@ -321,7 +321,7 @@ def rapport(slug: str, d: dict, chemin: str) -> None:
     doc.add_heading(f"{numero}. Constatations détaillées", level=1)
     consigne(doc, "Une sous-section par constatation, par sévérité décroissante. "
                   "Dupliquer le bloc ci-dessous autant que nécessaire.")
-    doc.add_heading(f"{numero}.1 <CLIENT>-2026-001 — <titre orienté impact>", level=2)
+    doc.add_heading(f"{numero}.1 <CLIENT>-2026-001 - <titre orienté impact>", level=2)
     lignes = [["Identifiant", "<CLIENT>-2026-001"], ["Sévérité", "Critique"],
               ["Score CVSS v4.0", "<9.3>"], ["Vecteur CVSS", "<CVSS:4.0/…>"],
               ["Criticité métier", "<si différente : justifier>"],
@@ -367,7 +367,7 @@ def rapport(slug: str, d: dict, chemin: str) -> None:
     lettres = "ABCDEFGHIJ"
     idx = 0
     for titre, entetes in d["annexes"]:
-        doc.add_heading(f"Annexe {lettres[idx]} — {titre}", level=1)
+        doc.add_heading(f"Annexe {lettres[idx]} - {titre}", level=1)
         if entetes:
             largeur = 16 / len(entetes)
             tableau(doc, entetes, [["<…>"] * len(entetes)],
@@ -376,7 +376,7 @@ def rapport(slug: str, d: dict, chemin: str) -> None:
             doc.add_paragraph("<…>")
         idx += 1
 
-    doc.add_heading(f"Annexe {lettres[idx]} — Conformité et rattachement réglementaire",
+    doc.add_heading(f"Annexe {lettres[idx]} - Conformité et rattachement réglementaire",
                     level=1)
     consigne(doc, "Transforme le rapport en pièce d'audit pour les clients soumis "
                   "à une obligation. Indicatif : ne constitue pas un audit de "
@@ -386,12 +386,12 @@ def rapport(slug: str, d: dict, chemin: str) -> None:
             largeurs=[3.2, 2.6, 4, 2.4, 3.8])
     idx += 1
 
-    doc.add_heading(f"Annexe {lettres[idx]} — Outillage", level=1)
+    doc.add_heading(f"Annexe {lettres[idx]} - Outillage", level=1)
     tableau(doc, ["Outil", "Version", "Usage", "Phase"],
             [["<…>", "<…>", "<…>", "<…>"]], largeurs=[4, 3, 6, 3])
     idx += 1
 
-    doc.add_heading(f"Annexe {lettres[idx]} — Manifeste des preuves", level=1)
+    doc.add_heading(f"Annexe {lettres[idx]} - Manifeste des preuves", level=1)
     doc.add_paragraph(
         "Preuves conservées chiffrées, hors du présent document. Destruction "
         "prévue le <date de remise + 90 jours>, actée par certificat.")
@@ -399,18 +399,18 @@ def rapport(slug: str, d: dict, chemin: str) -> None:
             [["<…>", "<…>", "<…>"]], largeurs=[4.5, 5.5, 6])
     idx += 1
 
-    doc.add_heading(f"Annexe {lettres[idx]} — Glossaire", level=1)
+    doc.add_heading(f"Annexe {lettres[idx]} - Glossaire", level=1)
     tableau(doc, ["Terme", "Définition"], [["<…>", "<…>"]], largeurs=[4, 12])
     idx += 1
 
-    doc.add_heading(f"Annexe {lettres[idx]} — Diffusion et confidentialité", level=1)
+    doc.add_heading(f"Annexe {lettres[idx]} - Diffusion et confidentialité", level=1)
     tableau(doc, ["Destinataire", "Fonction", "Date de remise", "Format"],
             [["<…>", "<…>", "<…>", "PDF chiffré"]], largeurs=[4.5, 4.5, 3.5, 3.5])
     doc.add_paragraph(
         f"Document classé {CONFIDENTIEL}. Toute diffusion hors de la liste "
         "ci-dessus requiert l'accord écrit du Client.")
 
-    pied_de_page(doc.sections[0], f"<CLIENT> — {d['titre']} — {CONFIDENTIEL}")
+    pied_de_page(doc.sections[0], f"<CLIENT> - {d['titre']} - {CONFIDENTIEL}")
     doc.save(chemin); print("écrit", chemin)
 
 
