@@ -1,0 +1,56 @@
+# ─── Secrets : voir SECURITY.md ───────────────────────────────────────────
+.env
+.env.*
+!.env.example
+.creds
+*credentials*
+*secret*
+!*secret*.example.*
+*token*.json
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+.netrc
+.npmrc
+# Exception : les fichiers chiffrés SOPS sont, eux, versionnables
+!*.enc.yml
+!*.enc.yaml
+!*.enc.json
+
+# ─── Preuves de mission : ne JAMAIS versionner ────────────────────────────
+20-missions/**/preuves/
+20-missions/**/evidence/
+20-missions/**/raw/
+20-missions/**/captures/
+*.pcap
+*.pcapng
+*.nessus
+*.burp
+burp-*.xml
+nuclei-*.json
+*.dump
+*.sql.gz
+
+# ─── Généré : les DOCX/PDF se régénèrent, ils ne se versionnent pas ───────
+90-templates/build/
+**/build/
+*.docx
+*.pdf
+# Exceptions : documents signés par le client, qui sont des originaux
+!20-missions/**/roe/*-signe.pdf
+!20-missions/**/roe/*-signee.pdf
+!90-templates/design/reference.docx
+!90-templates/design/couverture.docx
+
+# ─── Système ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.*.swp
+.venv/
+__pycache__/
+node_modules/

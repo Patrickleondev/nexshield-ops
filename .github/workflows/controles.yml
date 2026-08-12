@@ -1,0 +1,56 @@
+name: Contrôles dépôt
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  secrets:
+    name: Détection de secrets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  preuves:
+    name: Aucune preuve brute versionnée
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Motifs interdits (voir SECURITY.md)
+        run: |
+          set -e
+          MOTIFS='\.pcap$|\.pcapng$|\.nessus$|\.dump$|\.sql\.gz$|/preuves/|/evidence/|/captures/'
+          if git ls-files | grep -Ei "$MOTIFS"; then
+            echo "::error::Preuves brutes détectées dans le dépôt — voir SECURITY.md §1"
+            exit 1
+          fi
+          echo "OK — aucune preuve brute versionnée."
+
+  markdown:
+    name: Lint Markdown
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: '**/*.md'
+
+  liens:
+    name: Liens morts
+    runs-on: ubuntu-latest
+    continue-on-error: true   # informatif : la veille pourrit naturellement
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --max-concurrency 4 './**/*.md'

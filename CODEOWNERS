@@ -1,0 +1,34 @@
+# Propriétaires par défaut — revue obligatoire.
+# TODO(v1.0) : remplacer les équipes par les comptes GitHub réels des 5 membres.
+# Créer les équipes dans l'organisation GitHub avant d'activer la protection de branche.
+
+*                               @nexshield/direction
+
+# Gouvernance du dépôt
+/CONTRIBUTING.md                @nexshield/direction
+/CONVENTIONS.md                 @nexshield/direction
+/SECURITY.md                    @nexshield/secu-interne
+/.github/                       @nexshield/secu-interne
+
+# Société
+/00-societe/smsi/               @nexshield/grc
+/00-societe/juridique/          @nexshield/grc @nexshield/direction
+/00-societe/commercial/         @nexshield/direction
+/00-societe/rh/                 @nexshield/direction
+
+# Services — le propriétaire est le référent technique de l'offre
+/10-services/pentest-audit/         @nexshield/offensive
+/10-services/ai-redteaming/         @nexshield/offensive @nexshield/ia
+/10-services/secu-applicative/      @nexshield/offensive
+/10-services/devsecops/             @nexshield/devsecops
+/10-services/soc-ai-tools/          @nexshield/defensive
+/10-services/x-privacy/             @nexshield/grc
+/10-services/sensibilisation/       @nexshield/grc
+/10-services/infra-vpn-cloudflare/  @nexshield/devsecops
+
+# Missions — double relecture, cf. CONTRIBUTING.md §3
+/20-missions/                   @nexshield/direction @nexshield/grc
+
+/30-outils/                     @nexshield/offensive
+/40-veille/                     @nexshield/direction
+/90-templates/                  @nexshield/direction

@@ -1,0 +1,32 @@
+{
+  "_commentaire": "Modele. Copier HORS depot, completer, ne jamais recommitter. Les secrets passent par variables d'environnement.",
+  "mcpServers": {
+    "burp": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-burp@<VERSION-EPINGLEE>"],
+      "env": {
+        "BURP_API_URL": "http://127.0.0.1:1337",
+        "BURP_API_KEY": "${BURP_API_KEY}"
+      },
+      "_perimetre": "secu-applicative, pentest-audit",
+      "_validation_humaine": "toute action modifiante ou envoi de requete hors perimetre RoE"
+    },
+    "hexstrike": {
+      "command": "python3",
+      "args": ["-m", "hexstrike_mcp", "--pin", "<VERSION-EPINGLEE>"],
+      "env": {
+        "HEXSTRIKE_SCOPE_FILE": "${MISSION_DIR}/roe/perimetre.txt"
+      },
+      "_perimetre": "pentest-audit",
+      "_note": "Le fichier de perimetre est genere depuis le RoE signe. Aucun hote hors de ce fichier."
+    },
+    "doctrine": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem@<VERSION-EPINGLEE>",
+               "/chemin/vers/nexshield-ops/10-services",
+               "/chemin/vers/nexshield-ops/40-veille"],
+      "_perimetre": "transverse, lecture seule",
+      "_note": "N'exposer que 10-services et 40-veille. Jamais 20-missions."
+    }
+  }
+}
