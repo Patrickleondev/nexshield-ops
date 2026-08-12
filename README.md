@@ -22,7 +22,7 @@ le membre de l'équipe qui tient le clavier.
 | Savoir ce qui ne doit **jamais** entrer ici | [`SECURITY.md`](SECURITY.md) |
 | Démarrer une mission client | [`20-missions/README.md`](20-missions/README.md) |
 | Exécuter un service (méthodo, checklists, gabarits) | [`10-services/<service>/`](10-services/) |
-| Un modèle de NDA, RoE, autorisation de test | [`00-societe/juridique/modeles/`](00-societe/juridique/modeles/) |
+| Un modèle de NDA, RoE, autorisation de test | `make juridique` puis `90-templates/build/juridique/` - cadre dans [`00-societe/juridique/`](00-societe/juridique/) |
 | Savoir qui fait quoi, pour quand | [`00-societe/PILOTAGE-PROJET.md`](00-societe/PILOTAGE-PROJET.md) |
 | Comprendre les rôles et accueillir un nouveau | [`00-societe/rh/GESTION-EQUIPE.md`](00-societe/rh/GESTION-EQUIPE.md) |
 | Préparer un rendez-vous client | [`00-societe/commercial/POSTURE.md`](00-societe/commercial/POSTURE.md) |
@@ -54,7 +54,7 @@ chose dans deux missions, c'est que ça appartient à `10-services/`.
 
 | Service | Référentiel d'exécution | Cadrage | Exécution | Checklist | Outillage |
 |---|---|:-:|:-:|:-:|:-:|
-| [`pentest-audit`](10-services/pentest-audit/) | PTES + OWASP WSTG + NIST SP 800-115 | oui | partiel | oui | non |
+| [`pentest-audit`](10-services/pentest-audit/) | PTES + OWASP WSTG + NIST SP 800-115 | oui | oui | oui | oui |
 | [`ai-redteaming`](10-services/ai-redteaming/) | OWASP Top 10 LLM 2025 + MITRE ATLAS + NIST AI RMF | oui | oui | oui | oui |
 | [`secu-applicative`](10-services/secu-applicative/) | OWASP ASVS 5.0 + WSTG + API Top 10 + MASTG | oui | oui | oui | oui |
 | [`devsecops`](10-services/devsecops/) | OWASP SAMM + NIST SSDF (SP 800-218) + SLSA | oui | oui | oui | oui |
@@ -63,10 +63,13 @@ chose dans deux missions, c'est que ça appartient à `10-services/`.
 | [`sensibilisation`](10-services/sensibilisation/) | NIST SP 800-50r1 | oui | oui | oui | oui |
 | [`infra-vpn-cloudflare`](10-services/infra-vpn-cloudflare/) | CIS Benchmarks + guides ANSSI + NIST SP 800-207 | oui | oui | oui | oui |
 
-Tous les services sont en doctrine `v0.1` : la base est écrite et utilisable,
-elle sera passée en `v1.0` après épreuve sur une première mission réelle.
-`pentest-audit` reste à compléter sur ses procédures d'exécution
-(`PRO-PT-101` à `PRO-PT-104`) et son outillage.
+Les huit services ont leur socle écrit et utilisable. Tous sont en doctrine
+`v0.1` : rien n'a encore été éprouvé sur une mission réelle. Le passage en
+`v1.0` suppose une première mission et la relecture juridique des gabarits.
+
+Procédure transverse à tous les services :
+[`PRO-GEN-100`](00-societe/procedures/PRO-GEN-100-collecte-de-preuves.md),
+collecte, conservation et destruction des preuves.
 
 **Colonne vertébrale transverse : ISO/IEC 27001:2022** (notre SMSI) et
 **MITRE ATT&CK** comme langage commun de tous nos livrables.

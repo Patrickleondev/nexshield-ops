@@ -30,6 +30,20 @@ puis relu à la main avant chaque tag.
 - `10-services/*/outillage/OUTILLAGE.md` : pour chaque service, le socle d'outils
   retenu avec sa licence, et surtout le tableau de ce qu'aucun outil ne couvre.
 - Liens vers les sources officielles dans les checklists et les README de service.
+- `pentest-audit` complété : `PRO-PT-100` (renseignement), `PRO-PT-101`
+  (modélisation de menaces), `PRO-PT-102` (analyse de vulnérabilités),
+  `PRO-PT-103` (exploitation), `PRO-PT-104` (post-exploitation et nettoyage),
+  `PRO-PT-200` (restitution), et son document d'outillage.
+
+### Modifié
+
+- La procédure de collecte et de destruction des preuves, commune à tous les
+  services, est renommée `PRO-PT-100` en **`PRO-GEN-100`** et déplacée dans
+  `00-societe/procedures/`. Le code `GEN` est celui prévu par `NOMENCLATURE.md`
+  pour les documents transverses ; le numéro `PRO-PT-100` revient au
+  renseignement, comme l'annonçait la méthodologie PTES. Renommage par `git mv`,
+  toutes les références mises à jour.
+- Suppression des tirets cadratins et demi-cadratins dans l'ensemble du dépôt.
 
 - Squelette du dépôt d'exploitation : arborescence, gouvernance, conventions.
 - `SECURITY.md` : politique de non-versionnement des secrets et des preuves de mission.
@@ -46,7 +60,7 @@ puis relu à la main avant chaque tag.
 - `00-societe/rh/prompt-presentation-equipe.md` : prompt de génération du support
   de présentation du dépôt aux associés.
 - `10-services/pentest-audit/` : méthodologie PTES adaptée, procédure de cadrage
-  (`PRO-PT-001`), procédure de collecte et destruction des preuves (`PRO-PT-100`),
+  (`PRO-PT-001`), procédure de collecte et destruction des preuves (`PRO-GEN-100`),
   checklist de relecture avant livraison. Ce service sert de référence aux autres.
 - `10-services/*/methodologie/` : phases propres à chacun des sept autres services,
   avec ce qui leur est spécifique et le socle commun.

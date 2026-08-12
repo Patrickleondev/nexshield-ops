@@ -135,7 +135,7 @@ paquet applicatif.
 - **Arrêt immédiat** si un test provoque un effet non prévu en production.
 
 Collecte et destruction des preuves : procédure commune
-[`PRO-PT-100`](../../pentest-audit/procedures/PRO-PT-100-collecte-de-preuves.md).
+[`PRO-GEN-100`](../../../00-societe/procedures/PRO-GEN-100-collecte-de-preuves.md).
 
 ---
 

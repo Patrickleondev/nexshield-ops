@@ -48,7 +48,10 @@ profils techniques est une diapositive ratée.**
    d'exécution par métier. Source : `00-societe/smsi/REFERENTIELS.md`.
 3. **Pourquoi ces référentiels et pas d'autres** - reprendre les arguments
    commerciaux du document, pas seulement les noms.
-4. **Le dépôt en un coup d'œil** - les six dossiers racine et à quoi ils servent.
+4. **Le dépôt en un coup d'œil** - les dossiers racine et à quoi ils servent.
+   Insister sur la structure identique des huit services : cadrage, exécution,
+   checklist, outillage. Qui connaît un service sait naviguer dans les sept
+   autres.
 5. **Une diapositive par rôle** - « si tu es Dora, tu vis dans ces dossiers ».
    Cinq diapositives, une par associé, avec ses trois premiers documents à lire.
 6. **Le cycle d'une mission** - les dix étapes, en insistant sur les deux
@@ -95,8 +98,12 @@ Elles doivent apparaître sur une diapositive dédiée, formulées simplement :
 
 - Ne pas inventer de contenu absent du dépôt. Si une information manque, écris
   « à compléter » plutôt que de la produire.
-- Ne pas présenter la doctrine comme achevée : la plupart des services sont en
-  `v0.1`, seul `pentest-audit` a une méthodologie et deux procédures rédigées.
-  L'honnêteté sur l'état d'avancement est le but de la diapositive 12.
+- Ne pas présenter la doctrine comme achevée. État réel, à reprendre tel quel :
+  **les huit services ont désormais leur socle écrit** - une procédure de
+  cadrage, une procédure d'exécution, une checklist bâtie sur leur référentiel et
+  un document d'outillage. Mais **tous sont en `v0.1`** : rien n'a encore été
+  éprouvé sur une mission réelle. Le passage en `v1.0` suppose une première
+  mission et la relecture juridique des gabarits.
+  L'honnêteté sur cet écart est le but de la diapositive 12.
 - Ne pas transformer ça en argumentaire commercial : le public, ce sont les
   associés, pas des clients.

@@ -73,7 +73,7 @@ Aucune action technique ne démarre tant que ces points ne sont pas satisfaits :
 | [`outillage/OUTILLAGE.md`](outillage/OUTILLAGE.md) | Le peu qui s outille, et tout ce qui ne s outille pas |
 
 La collecte et la destruction des preuves suivent la procedure commune
-[`PRO-PT-100`](../pentest-audit/procedures/PRO-PT-100-collecte-de-preuves.md).
+[`PRO-GEN-100`](../../00-societe/procedures/PRO-GEN-100-collecte-de-preuves.md).
 
 ## 6. Contenu de ce dossier
 

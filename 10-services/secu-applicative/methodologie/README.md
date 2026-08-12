@@ -38,7 +38,7 @@ Ces règles ne se redéclinent pas par service, elles s'appliquent partout :
 - **Préalables bloquants** : NDA, contrat, RoE et autorisation signés avant toute
   action technique. Voir `10-services/secu-applicative/README.md` §4.
 - **Preuves** : coffre chiffré, manifeste d'empreintes, destruction à J+90.
-  Voir `10-services/pentest-audit/procedures/PRO-PT-100-collecte-de-preuves.md`,
+  Voir `10-services/pentest-audit/procedures/PRO-GEN-100-collecte-de-preuves.md`,
   qui fait référence pour tous les services.
 - **Journal des opérations** : horodaté, en temps réel, y compris pour les actions
   passant par un agent ou un serveur MCP.
