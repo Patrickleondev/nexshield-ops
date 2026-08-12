@@ -58,6 +58,20 @@ Aucune action technique ne démarre tant que ces points ne sont pas satisfaits :
 - Rapport de campagne (taux de clic, de signalement, de saisie)
 - Rapport de progression d'une année sur l'autre
 
+
+## Documents disponibles
+
+| Document | Objet |
+|---|---|
+| [`methodologie/README.md`](methodologie/README.md) | Les phases, et ce qui est propre a ce service |
+| [`procedures/PRO-SENS-001-cadrage.md`](procedures/PRO-SENS-001-cadrage.md) | Objectif chiffre, publics, charte de campagne |
+| [`procedures/PRO-SENS-100-campagnes-et-formation.md`](procedures/PRO-SENS-100-campagnes-et-formation.md) | Execution, debriefing, restitution agregee, formation |
+| [`checklists/checklist-campagne.md`](checklists/checklist-campagne.md) | Avant, pendant et apres chaque campagne |
+| [`outillage/OUTILLAGE.md`](outillage/OUTILLAGE.md) | Socle auto-heberge, et ce que nous refusons |
+
+La collecte et la destruction des preuves suivent la procedure commune
+[`PRO-PT-100`](../pentest-audit/procedures/PRO-PT-100-collecte-de-preuves.md).
+
 ## 6. Contenu de ce dossier
 
 | Dossier | Ce qu'on y met | Ce qu'on n'y met pas |

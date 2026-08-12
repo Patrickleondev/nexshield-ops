@@ -52,16 +52,21 @@ chose dans deux missions, c'est que ça appartient à `10-services/`.
 
 ## Les huit services
 
-| Service | Référentiel d'exécution | Statut doctrine |
-|---|---|---|
-| [`pentest-audit`](10-services/pentest-audit/) | PTES + OWASP WSTG + NIST SP 800-115 | v0.1 - brouillon |
-| [`ai-redteaming`](10-services/ai-redteaming/) | OWASP Top 10 LLM + MITRE ATLAS + NIST AI RMF | v0.1 - brouillon |
-| [`secu-applicative`](10-services/secu-applicative/) | OWASP ASVS + MASTG | v0.1 - brouillon |
-| [`devsecops`](10-services/devsecops/) | NIST SSDF (SP 800-218) + OWASP SAMM + SLSA | v0.1 - brouillon |
-| [`soc-ai-tools`](10-services/soc-ai-tools/) | MITRE ATT&CK + D3FEND + SIGMA + NIST SP 800-61 | v0.1 - brouillon |
-| [`x-privacy`](10-services/x-privacy/) | RGPD + ISO/IEC 27701 + droit local | v0.1 - brouillon |
-| [`sensibilisation`](10-services/sensibilisation/) | NIST SP 800-50 + kits ENISA | v0.1 - brouillon |
-| [`infra-vpn-cloudflare`](10-services/infra-vpn-cloudflare/) | CIS Benchmarks + guides ANSSI | v0.1 - brouillon |
+| Service | Référentiel d'exécution | Cadrage | Exécution | Checklist | Outillage |
+|---|---|:-:|:-:|:-:|:-:|
+| [`pentest-audit`](10-services/pentest-audit/) | PTES + OWASP WSTG + NIST SP 800-115 | oui | partiel | oui | non |
+| [`ai-redteaming`](10-services/ai-redteaming/) | OWASP Top 10 LLM 2025 + MITRE ATLAS + NIST AI RMF | oui | oui | oui | oui |
+| [`secu-applicative`](10-services/secu-applicative/) | OWASP ASVS 5.0 + WSTG + API Top 10 + MASTG | oui | oui | oui | oui |
+| [`devsecops`](10-services/devsecops/) | OWASP SAMM + NIST SSDF (SP 800-218) + SLSA | oui | oui | oui | oui |
+| [`soc-ai-tools`](10-services/soc-ai-tools/) | MITRE ATT&CK + D3FEND + SIGMA + NIST SP 800-61r3 | oui | oui | oui | oui |
+| [`x-privacy`](10-services/x-privacy/) | Loi togolaise 2019-014 + RGPD + Convention de Malabo | oui | oui | oui | oui |
+| [`sensibilisation`](10-services/sensibilisation/) | NIST SP 800-50r1 | oui | oui | oui | oui |
+| [`infra-vpn-cloudflare`](10-services/infra-vpn-cloudflare/) | CIS Benchmarks + guides ANSSI + NIST SP 800-207 | oui | oui | oui | oui |
+
+Tous les services sont en doctrine `v0.1` : la base est écrite et utilisable,
+elle sera passée en `v1.0` après épreuve sur une première mission réelle.
+`pentest-audit` reste à compléter sur ses procédures d'exécution
+(`PRO-PT-101` à `PRO-PT-104`) et son outillage.
 
 **Colonne vertébrale transverse : ISO/IEC 27001:2022** (notre SMSI) et
 **MITRE ATT&CK** comme langage commun de tous nos livrables.

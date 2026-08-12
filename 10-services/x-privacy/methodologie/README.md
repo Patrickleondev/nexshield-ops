@@ -50,8 +50,8 @@ Ces règles ne se redéclinent pas par service, elles s'appliquent partout :
 
 ## Reste à faire pour passer en v1.0
 
-- [ ] Détailler chaque phase en procédure numérotée `PRO-PRIV-NNN`
-- [ ] Produire les checklists d'exécution à partir du référentiel
+- [x] Procédures de cadrage et d'exécution écrites
+- [x] Checklist d'exécution produite à partir du référentiel
 - [ ] Valider le gabarit de rapport sur une mission blanche
-- [ ] Documenter l'outillage dans `outillage/`
+- [x] Outillage documenté dans `outillage/`
 - [ ] Faire relire les clauses juridiques spécifiques

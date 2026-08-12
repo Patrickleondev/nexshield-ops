@@ -12,6 +12,25 @@ puis relu à la main avant chaque tag.
 
 ### Ajouté
 
+- Socle opérationnel des six services restants : pour chacun, une procédure de
+  cadrage, une procédure d'exécution, une checklist bâtie sur le référentiel et
+  un document d'outillage.
+  - `secu-applicative` : `PRO-APP-001`, `PRO-APP-100`, couverture des 17 chapitres
+    d'OWASP ASVS 5.0.0.
+  - `devsecops` : `PRO-DSO-001`, `PRO-DSO-100`, évaluation OWASP SAMM et
+    durcissement de la chaîne de livraison.
+  - `soc-ai-tools` : `PRO-SOC-001`, `PRO-SOC-100`, couverture ATT&CK notée en
+    trois états, règles SIGMA éprouvées avant livraison.
+  - `x-privacy` : `PRO-PRIV-001`, `PRO-PRIV-100`, régimes togolais et européen
+    traités ensemble, droits des personnes réellement exercés.
+  - `sensibilisation` : `PRO-SENS-001`, `PRO-SENS-100`, charte de campagne
+    interdisant toute sanction individuelle et tout résultat nominatif.
+  - `infra-vpn-cloudflare` : `PRO-INFRA-001`, `PRO-INFRA-100`, restauration
+    vérifiée avant intervention, un changement par fenêtre.
+- `10-services/*/outillage/OUTILLAGE.md` : pour chaque service, le socle d'outils
+  retenu avec sa licence, et surtout le tableau de ce qu'aucun outil ne couvre.
+- Liens vers les sources officielles dans les checklists et les README de service.
+
 - Squelette du dépôt d'exploitation : arborescence, gouvernance, conventions.
 - `SECURITY.md` : politique de non-versionnement des secrets et des preuves de mission.
 - `CONTRIBUTING.md` : modèle de branches, matrice de revue, cycle de vie d'une mission,

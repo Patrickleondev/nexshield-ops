@@ -59,6 +59,20 @@ Aucune action technique ne démarre tant que ces points ne sont pas satisfaits :
 - Configurations CI/CD de référence
 - Réévaluation annuelle (base du récurrent)
 
+
+## Documents disponibles
+
+| Document | Objet |
+|---|---|
+| [`methodologie/README.md`](methodologie/README.md) | Les phases, et ce qui est propre a ce service |
+| [`procedures/PRO-DSO-001-cadrage.md`](procedures/PRO-DSO-001-cadrage.md) | Chaine de livraison, maturite SAMM de depart, seuils de blocage |
+| [`procedures/PRO-DSO-100-mise-en-oeuvre.md`](procedures/PRO-DSO-100-mise-en-oeuvre.md) | Installation des controles, du meilleur au pire rapport signal sur bruit |
+| [`checklists/checklist-maturite-samm.md`](checklists/checklist-maturite-samm.md) | Evaluation SAMM et durcissement de la chaine |
+| [`outillage/OUTILLAGE.md`](outillage/OUTILLAGE.md) | Socle d outils, ordre d installation et limites |
+
+La collecte et la destruction des preuves suivent la procedure commune
+[`PRO-PT-100`](../pentest-audit/procedures/PRO-PT-100-collecte-de-preuves.md).
+
 ## 6. Contenu de ce dossier
 
 | Dossier | Ce qu'on y met | Ce qu'on n'y met pas |

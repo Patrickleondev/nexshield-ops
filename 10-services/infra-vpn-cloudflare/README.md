@@ -60,6 +60,20 @@ Aucune action technique ne démarre tant que ces points ne sont pas satisfaits :
 - Schéma d'architecture cible
 - Matrice de flux
 
+
+## Documents disponibles
+
+| Document | Objet |
+|---|---|
+| [`methodologie/README.md`](methodologie/README.md) | Les phases, et ce qui est propre a ce service |
+| [`procedures/PRO-INFRA-001-cadrage.md`](procedures/PRO-INFRA-001-cadrage.md) | Sauvegardes restaurables, exposition reelle, fenetres d intervention |
+| [`procedures/PRO-INFRA-100-durcissement.md`](procedures/PRO-INFRA-100-durcissement.md) | Un changement, une fenetre, un retour arriere |
+| [`checklists/checklist-durcissement.md`](checklists/checklist-durcissement.md) | Exposition, acces, segmentation, systemes, bordure |
+| [`outillage/OUTILLAGE.md`](outillage/OUTILLAGE.md) | Outils qui mesurent et outils qui appliquent |
+
+La collecte et la destruction des preuves suivent la procedure commune
+[`PRO-PT-100`](../pentest-audit/procedures/PRO-PT-100-collecte-de-preuves.md).
+
 ## 6. Contenu de ce dossier
 
 | Dossier | Ce qu'on y met | Ce qu'on n'y met pas |

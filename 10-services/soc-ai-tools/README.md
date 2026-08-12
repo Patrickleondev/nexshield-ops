@@ -61,6 +61,20 @@ Aucune action technique ne démarre tant que ces points ne sont pas satisfaits :
 - Playbooks de réponse
 - `RAPPORT` d'écart de détection
 
+
+## Documents disponibles
+
+| Document | Objet |
+|---|---|
+| [`methodologie/README.md`](methodologie/README.md) | Les phases, et ce qui est propre a ce service |
+| [`procedures/PRO-SOC-001-cadrage.md`](procedures/PRO-SOC-001-cadrage.md) | Verification des sources, couverture ATT&CK de depart, mode de fonctionnement |
+| [`procedures/PRO-SOC-100-ingenierie-de-detection.md`](procedures/PRO-SOC-100-ingenierie-de-detection.md) | Cycle complet : ecrire, eprouver, regler le bruit, documenter la reponse |
+| [`checklists/checklist-couverture-detection.md`](checklists/checklist-couverture-detection.md) | Couverture par tactique, en trois etats |
+| [`outillage/OUTILLAGE.md`](outillage/OUTILLAGE.md) | Socle d outils, et position sur l IA defensive |
+
+La collecte et la destruction des preuves suivent la procedure commune
+[`PRO-PT-100`](../pentest-audit/procedures/PRO-PT-100-collecte-de-preuves.md).
+
 ## 6. Contenu de ce dossier
 
 | Dossier | Ce qu'on y met | Ce qu'on n'y met pas |
